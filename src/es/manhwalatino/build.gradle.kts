@@ -6,8 +6,8 @@ plugins {
 
 keiyoushi {
     name = "Senpou Manhwa-Latino"
-    // Senpou: custom /search/{token}/{query}/ (classic Madara search → 410)
-    versionCode = 13
+    // Senpou: slower rate limit + no view-count POSTs (HTTP 429)
+    versionCode = 14
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"

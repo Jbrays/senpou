@@ -26,6 +26,9 @@ abstract class ManhwaLatino : Madara() {
     // Real web search uses: /search/{token}/{query}/  e.g. /search/1788a865/cunada/
     override val useLoadMoreRequest = LoadMoreStrategy.Never
 
+    // Extra POSTs to admin-ajax (view count) trigger 429 on this host.
+    override val sendViewCount = false
+
     /**
      * Path token used by the site's custom search rewrite.
      * If search breaks again, check the form action on the website and update this.
@@ -70,7 +73,22 @@ abstract class ManhwaLatino : Madara() {
                 request
             }
 
-            val response = chain.proceed(newRequest)
+            // Retry a couple of times on 429 (site / CF rate limit).
+            var attempt = 0
+            var response = chain.proceed(newRequest)
+            while (response.code == 429 && attempt < 3) {
+                val retryAfter = response.header("Retry-After")?.toLongOrNull()
+                response.close()
+                val waitMs = ((retryAfter ?: 0L).coerceIn(0L, 30L) * 1000L)
+                    .coerceAtLeast((attempt + 1) * 2500L)
+                try {
+                    Thread.sleep(waitMs)
+                } catch (_: InterruptedException) {
+                    break
+                }
+                attempt++
+                response = chain.proceed(newRequest)
+            }
 
             if (isImageRequest && response.header("Content-Type")?.contains("application/octet-stream", true) == true) {
                 val orgBody = response.body
@@ -83,7 +101,8 @@ abstract class ManhwaLatino : Madara() {
 
             return@addInterceptor response
         }
-        .rateLimit(1, 2.seconds)
+        // Site is strict: max 1 HTML request every 4s (images share the same client).
+        .rateLimit(1, 4.seconds)
         .build()
 
     override val useNewChapterEndpoint = true

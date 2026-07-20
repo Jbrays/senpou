@@ -29,6 +29,8 @@ abstract class ManhwaEs : Madara() {
     // Same custom search path as Manhwa-Latino (classic Madara search → 410).
     override val useLoadMoreRequest = LoadMoreStrategy.Never
 
+    override val sendViewCount = false
+
     private val searchPathToken = "1788a865"
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
@@ -66,7 +68,21 @@ abstract class ManhwaEs : Madara() {
                 request
             }
 
-            val response = chain.proceed(newRequest)
+            var attempt = 0
+            var response = chain.proceed(newRequest)
+            while (response.code == 429 && attempt < 3) {
+                val retryAfter = response.header("Retry-After")?.toLongOrNull()
+                response.close()
+                val waitMs = ((retryAfter ?: 0L).coerceIn(0L, 30L) * 1000L)
+                    .coerceAtLeast((attempt + 1) * 2500L)
+                try {
+                    Thread.sleep(waitMs)
+                } catch (_: InterruptedException) {
+                    break
+                }
+                attempt++
+                response = chain.proceed(newRequest)
+            }
 
             if (isImageRequest && response.header("Content-Type")?.contains("application/octet-stream", true) == true) {
                 val orgBody = response.body
@@ -79,7 +95,7 @@ abstract class ManhwaEs : Madara() {
 
             return@addInterceptor response
         }
-        .rateLimit(1, 2.seconds)
+        .rateLimit(1, 4.seconds)
         .build()
 
     override val useNewChapterEndpoint = true
