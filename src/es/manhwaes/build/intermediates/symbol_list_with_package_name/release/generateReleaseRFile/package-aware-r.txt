@@ -1,2 +1,0 @@
-app.senpou.extension
-mipmap ic_launcher

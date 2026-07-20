@@ -1,8 +1,0 @@
-keiyoushi.source.UrlActivity
-app.senpou.extension.es.manhwalatino.ExtensionGenerated
-eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreDetection: eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreDetection valueOf(java.lang.String)
-eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreDetection: eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreDetection[] values()
-keiyoushi.source.UrlActivity: UrlActivity()
-eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreStrategy: eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreStrategy valueOf(java.lang.String)
-app.senpou.extension.es.manhwalatino.ExtensionGenerated: ExtensionGenerated()
-eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreStrategy: eu.kanade.tachiyomi.multisrc.madara.Madara$LoadMoreStrategy[] values()

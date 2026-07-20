@@ -1,8 +1,0 @@
-app.senpou.extension.topcomicporno-pngs-0 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/build/generated/res/pngs/release
-app.senpou.extension.topcomicporno-updated_navigation_xml-1 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/build/generated/updated_navigation_xml/release
-app.senpou.extension.topcomicporno-packageReleaseResources-2 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/build/intermediates/incremental/release/packageReleaseResources/merged.dir
-app.senpou.extension.topcomicporno-packageReleaseResources-3 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
-app.senpou.extension.topcomicporno-release-4 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/build/intermediates/merged_res/release/mergeReleaseResources
-app.senpou.extension.topcomicporno-topcomicporno-5 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/res
-app.senpou.extension.topcomicporno-release-6 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/topcomicporno/src/release/res
-gradleHome-0 /home/jeff/.gradle
