@@ -1,0 +1,7 @@
+{
+  "name": "Senpou",
+  "website": "https://github.com/Jbrays/senpou",
+  "signingKeyFingerprint": "3312b4d3baf078d661a5a3a78f38a9bf64ae22fce461b4124a871c878394de86",
+  "apkBaseUrl": "https://raw.githubusercontent.com/Jbrays/senpou/repo/apk",
+  "index": "https://raw.githubusercontent.com/Jbrays/senpou/repo/index.min.json"
+}
