@@ -1,0 +1,19 @@
+import io.github.keiyoushi.gradle.api.ContentWarning
+
+plugins {
+    alias(kei.plugins.extension)
+}
+
+keiyoushi {
+    name = "Manhwa-Latino"
+    // Senpou: bumped for search fix (useLoadMoreRequest = Never)
+    versionCode = 12
+    contentWarning = ContentWarning.MIXED
+    libVersion = "1.4"
+    theme = "madara"
+
+    source {
+        lang = "es"
+        baseUrl = "https://manhwa-latino.com"
+    }
+}
