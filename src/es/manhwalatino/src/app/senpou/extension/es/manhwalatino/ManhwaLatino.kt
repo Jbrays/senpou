@@ -8,7 +8,6 @@ import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
-import keiyoushi.network.rateLimit
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -21,7 +20,6 @@ import java.text.Normalizer
 import java.text.SimpleDateFormat
 import java.util.Locale
 import kotlin.math.min
-import kotlin.time.Duration.Companion.seconds
 
 @Source
 abstract class ManhwaLatino : Madara() {
@@ -70,8 +68,7 @@ abstract class ManhwaLatino : Madara() {
 
             return@addInterceptor response
         }
-        // 1 req / 1s — not 4s; browse + AJAX search should feel normal
-        .rateLimit(1, 1.seconds)
+        // No artificial rate limit: browse already works fine; 410/429 were bad endpoints, not volume.
         .build()
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {

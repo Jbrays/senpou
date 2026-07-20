@@ -8,7 +8,6 @@ import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
-import keiyoushi.network.rateLimit
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -21,7 +20,6 @@ import java.text.Normalizer
 import java.text.SimpleDateFormat
 import java.util.Locale
 import kotlin.math.min
-import kotlin.time.Duration.Companion.seconds
 
 /** Mirror of Manhwa-Latino with the same search strategy. */
 @Source
@@ -63,7 +61,7 @@ abstract class ManhwaEs : Madara() {
 
             return@addInterceptor response
         }
-        .rateLimit(1, 1.seconds)
+        // No artificial rate limit (same rationale as Manhwa-Latino).
         .build()
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request = searchLoadMoreRequest(page, query, filters)
