@@ -34,7 +34,7 @@ Sí: **es mejor** subir a GitHub y añadir el repo en Mihon. Así actualizas des
 
 ```bash
 cd senpou
-git remote add origin git@github.com:TU_USUARIO/senpou.git
+git remote add origin git@github.com:Jbrays/senpou.git
 git push -u origin main
 ```
 
@@ -64,7 +64,7 @@ Fingerprint actual (local dev key):
 **Opción A — local**
 
 ```bash
-export GITHUB_USER=TU_USUARIO
+export GITHUB_USER=Jbrays
 export GITHUB_REPO=senpou
 # si usas la key local por defecto:
 export ALIAS=senpou
@@ -86,7 +86,7 @@ Push a `main` con el workflow `.github/workflows/publish-repo.yml` (requiere sec
 3. Añadir:
 
 ```text
-https://raw.githubusercontent.com/TU_USUARIO/senpou/repo/index.min.json
+https://raw.githubusercontent.com/Jbrays/senpou/repo/index.min.json
 ```
 
 4. Actualiza la lista e instala las de **Senpou …**
