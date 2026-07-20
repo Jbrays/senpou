@@ -2,12 +2,15 @@ package app.senpou.extension.es.manhwalatino
 
 import eu.kanade.tachiyomi.multisrc.madara.Madara
 import eu.kanade.tachiyomi.network.GET
+import eu.kanade.tachiyomi.source.model.FilterList
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
 import keiyoushi.network.rateLimit
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
+import okhttp3.Request
 import okhttp3.Response
 import okhttp3.ResponseBody.Companion.asResponseBody
 import org.jsoup.nodes.Element
@@ -19,9 +22,37 @@ import kotlin.time.Duration.Companion.seconds
 abstract class ManhwaLatino : Madara() {
     override val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale("es"))
 
-    // Senpou: avoid madara_load_more / admin-ajax.php path that returns HTTP 410 on search.
-    // Force classic GET ?s=...&post_type=wp-manga (same idea as TopComicPorno).
+    // Site disabled classic Madara search (?s=&post_type=wp-manga → HTTP 410).
+    // Real web search uses: /search/{token}/{query}/  e.g. /search/1788a865/cunada/
     override val useLoadMoreRequest = LoadMoreStrategy.Never
+
+    /**
+     * Path token used by the site's custom search rewrite.
+     * If search breaks again, check the form action on the website and update this.
+     */
+    private val searchPathToken = "1788a865"
+
+    override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
+        val trimmed = query.trim()
+        // Empty query: fall back to popular list (custom search needs a term).
+        if (trimmed.isEmpty()) {
+            return popularMangaRequest(page)
+        }
+
+        val url = baseUrl.toHttpUrl().newBuilder().apply {
+            addPathSegment("search")
+            addPathSegment(searchPathToken)
+            addPathSegment(trimmed)
+            if (page > 1) {
+                addPathSegment("page")
+                addPathSegment(page.toString())
+            }
+            // trailing slash like the website
+            addPathSegment("")
+        }.build()
+
+        return GET(url, headers)
+    }
 
     override val client: OkHttpClient = super.client.newBuilder()
         .addInterceptor { chain ->

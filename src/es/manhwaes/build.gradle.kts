@@ -6,7 +6,8 @@ plugins {
 
 keiyoushi {
     name = "Senpou Manhwa-ES"
-    versionCode = 1
+    // Senpou: custom /search/{token}/{query}/ (same as Manhwa-Latino)
+    versionCode = 2
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"

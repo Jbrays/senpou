@@ -2,12 +2,15 @@ package app.senpou.extension.es.manhwaes
 
 import eu.kanade.tachiyomi.multisrc.madara.Madara
 import eu.kanade.tachiyomi.network.GET
+import eu.kanade.tachiyomi.source.model.FilterList
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
 import keiyoushi.network.rateLimit
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
+import okhttp3.Request
 import okhttp3.Response
 import okhttp3.ResponseBody.Companion.asResponseBody
 import org.jsoup.nodes.Element
@@ -23,8 +26,30 @@ import kotlin.time.Duration.Companion.seconds
 abstract class ManhwaEs : Madara() {
     override val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale("es"))
 
-    // Avoid madara_load_more / admin-ajax search path that returns HTTP 410 on some mirrors.
+    // Same custom search path as Manhwa-Latino (classic Madara search → 410).
     override val useLoadMoreRequest = LoadMoreStrategy.Never
+
+    private val searchPathToken = "1788a865"
+
+    override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
+        val trimmed = query.trim()
+        if (trimmed.isEmpty()) {
+            return popularMangaRequest(page)
+        }
+
+        val url = baseUrl.toHttpUrl().newBuilder().apply {
+            addPathSegment("search")
+            addPathSegment(searchPathToken)
+            addPathSegment(trimmed)
+            if (page > 1) {
+                addPathSegment("page")
+                addPathSegment(page.toString())
+            }
+            addPathSegment("")
+        }.build()
+
+        return GET(url, headers)
+    }
 
     override val client: OkHttpClient = super.client.newBuilder()
         .addInterceptor { chain ->
