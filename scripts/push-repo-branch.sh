@@ -18,7 +18,24 @@ if ! git remote get-url origin >/dev/null 2>&1; then
 fi
 
 TMP="$(mktemp -d)"
-trap 'rm -rf "$TMP"' EXIT
+cleanup() {
+  # Drop this worktree registration so the next publish does not collide.
+  git -C "$(dirname "$0")/.." worktree remove --force "$TMP/wt" 2>/dev/null || true
+  rm -rf "$TMP"
+  git -C "$(dirname "$0")/.." worktree prune 2>/dev/null || true
+}
+trap cleanup EXIT
+
+# Drop stale temp worktrees from interrupted publishes
+git worktree prune 2>/dev/null || true
+git worktree list --porcelain 2>/dev/null | awk '/^worktree /{print $2}' | while read -r wt; do
+  case "$wt" in
+    /tmp/*)
+      git worktree remove --force "$wt" 2>/dev/null || rm -rf "$wt"
+      ;;
+  esac
+done
+git worktree prune 2>/dev/null || true
 
 # Copy generated repo into a clean worktree of the repo branch
 git fetch origin "$BRANCH" 2>/dev/null || true
