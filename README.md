@@ -89,6 +89,8 @@ Push a `main` con el workflow `.github/workflows/publish-repo.yml` (requiere sec
 https://raw.githubusercontent.com/Jbrays/senpou/repo/index.min.json
 ```
 
+(Mihon 0.20+ también lee el `repo.json` hermano con `meta` y la huella de firma. No pegues solo la carpeta del repo.)
+
 4. Actualiza la lista e instala las de **Senpou …**
 
 Si el repo es **privado**, `raw.githubusercontent.com` no sirve sin auth; hazlo **público** o usa otra URL pública (JSDelivr, Cloudflare R2, etc.).

@@ -174,30 +174,51 @@ def main() -> None:
 
     index.sort(key=lambda e: e["pkg"])
 
+    # Source id must be JSON number (Long) for NetworkLegacyExtension in recent Mihon.
+    for entry in index:
+        for src in entry.get("sources") or []:
+            if isinstance(src.get("id"), str) and src["id"].isdigit():
+                src["id"] = int(src["id"])
+
     (out / "index.min.json").write_text(
         json.dumps(index, ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8",
     )
     (out / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    repo_meta = {
-        "name": "Senpou",
-        "website": f"https://github.com/{args.github_user}/{args.github_repo}",
-        "signingKeyFingerprint": args.signing_key_fingerprint,
-        "apkBaseUrl": f"{base}/apk",
-        "index": f"{base}/index.min.json",
+    # Mihon 0.20+ legacy flow:
+    # 1) User pastes .../index.min.json
+    # 2) App detects JSON array, then fetches sibling .../repo.json
+    # 3) repo.json MUST be NetworkLegacyExtensionRepo: { "meta": { name, website, signingKeyFingerprint } }
+    # Do NOT set index_v2 unless you publish a protobuf index.pb (would skip legacy list).
+    fingerprint = (args.signing_key_fingerprint or "").replace(":", "").lower()
+    if not fingerprint:
+        print(
+            "warn: empty signingKeyFingerprint — Mihon may refuse to trust updates",
+            file=sys.stderr,
+        )
+
+    repo_json = {
+        "meta": {
+            "name": "Senpou",
+            "shortName": "SEN",
+            "website": f"https://github.com/{args.github_user}/{args.github_repo}",
+            "signingKeyFingerprint": fingerprint,
+        }
     }
-    (out / "repo.json").write_text(json.dumps(repo_meta, indent=2) + "\n", encoding="utf-8")
+    (out / "repo.json").write_text(json.dumps(repo_json, indent=2) + "\n", encoding="utf-8")
 
     # Small helper page
     (out / "README.md").write_text(
         f"""# Senpou extension repo
 
-Add this URL in Mihon → Browse → Extensions → Repositories:
+Add this URL in Mihon → Settings → Browse → Extension repos:
 
 ```
 {base}/index.min.json
 ```
+
+Requires Mihon **0.20.1+**. The app also loads sibling `repo.json` (meta + signing fingerprint).
 
 Then install **Senpou *** extensions from the list.
 """,
