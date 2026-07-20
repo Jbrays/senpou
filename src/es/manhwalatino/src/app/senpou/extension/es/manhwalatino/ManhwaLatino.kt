@@ -9,12 +9,12 @@ import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
 import keiyoushi.network.rateLimit
-import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import okhttp3.ResponseBody.Companion.asResponseBody
+import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 import rx.Observable
 import java.text.Normalizer
@@ -27,24 +27,20 @@ import kotlin.time.Duration.Companion.seconds
 abstract class ManhwaLatino : Madara() {
     override val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale("es"))
 
-    // Classic Madara search (?s=&post_type=wp-manga) → 410.
-    // Site web search path /search/{token}/{query}/ is often 429 from the app client
-    // (browse/popular/latest still work). We search by scanning those lists instead.
+    /**
+     * - Classic GET ?s=&post_type=wp-manga → 410
+     * - Pretty URL /search/{token}/{query}/ → 429 from the app client (browse OK)
+     * - Madara AJAX admin-ajax madara_load_more is the real search we try first
+     * - Last resort: filter titles from a few latest/popular pages
+     */
     override val useLoadMoreRequest = LoadMoreStrategy.Never
-
-    // Extra POSTs / dead search-style genre fetch hurt this host.
     override val sendViewCount = false
     override val fetchGenres = false
 
-    /**
-     * Token from the website search rewrite, e.g.
-     * https://manhwa-latino.com/search/1788a865/cunada/
-     * Kept for a best-effort native search attempt.
-     */
-    private val searchPathToken = "1788a865"
-
     private val searchPageSize = 24
-    private val listPagesToScan = 6
+
+    /** Only for fallback scan — keep small so search stays fast. */
+    private val listPagesToScan = 3
 
     override val client: OkHttpClient = super.client.newBuilder()
         .addInterceptor { chain ->
@@ -74,34 +70,13 @@ abstract class ManhwaLatino : Madara() {
 
             return@addInterceptor response
         }
-        // Browse works; keep a mild limit without making search wait forever.
-        .rateLimit(1, 2.seconds)
+        // 1 req / 1s — not 4s; browse + AJAX search should feel normal
+        .rateLimit(1, 1.seconds)
         .build()
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
-        // Used only by the best-effort native attempt (and empty-query → popular).
-        val trimmed = query.trim()
-        if (trimmed.isEmpty()) {
-            return popularMangaRequest(page)
-        }
-
-        val url = baseUrl.toHttpUrl().newBuilder().apply {
-            addPathSegment("search")
-            addPathSegment(searchPathToken)
-            addPathSegment(trimmed)
-            if (page > 1) {
-                addPathSegment("page")
-                addPathSegment(page.toString())
-            }
-            addPathSegment("")
-        }.build()
-
-        val searchHeaders = headers.newBuilder()
-            .set("Referer", "$baseUrl/")
-            .set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
-            .build()
-
-        return GET(url, searchHeaders)
+        // Prefer Madara AJAX search (full catalog). Not the pretty /search/ URL.
+        return searchLoadMoreRequest(page, query, filters)
     }
 
     override fun fetchSearchManga(page: Int, query: String, filters: FilterList): Observable<MangasPage> {
@@ -111,24 +86,45 @@ abstract class ManhwaLatino : Madara() {
         }
 
         return Observable.fromCallable {
-            // 1) Try the website search path once (works in browser; often 429 in-app).
-            tryNativeSearch(page, trimmed, filters)?.let { return@fromCallable it }
-
-            // 2) Reliable fallback: filter titles from latest + popular (those endpoints work).
+            val ajax = tryAjaxSearch(page, trimmed, filters)
+            // Use AJAX if it returned hits; if empty on page 1, still try list scan
+            // (AJAX can "succeed" with empty HTML while the pretty search has results).
+            if (ajax != null && (ajax.mangas.isNotEmpty() || page > 1)) {
+                return@fromCallable ajax
+            }
             scanListsForQuery(trimmed, page)
         }
     }
 
-    private fun tryNativeSearch(page: Int, query: String, filters: FilterList): MangasPage? {
+    /**
+     * Single POST to admin-ajax.php — same as the theme's "load more" search.
+     * Returns null only when the endpoint is blocked/broken so we can fall back.
+     */
+    private fun tryAjaxSearch(page: Int, query: String, filters: FilterList): MangasPage? {
         return try {
-            val response = client.newCall(searchMangaRequest(page, query, filters)).execute()
+            val response = client.newCall(searchLoadMoreRequest(page, query, filters)).execute()
             if (!response.isSuccessful) {
                 response.close()
                 return null
             }
-            val parsed = searchMangaParse(response)
-            // Empty first page can mean wrong selectors; still accept if HTTP ok.
-            parsed
+            val body = response.body.string()
+            // WP often returns "0" when the ajax action is disabled
+            if (body.isBlank() || body == "0") {
+                return null
+            }
+
+            val document = Jsoup.parse(body, baseUrl)
+            val entries = document.select(searchMangaSelector())
+                .mapNotNull { runCatching { searchMangaFromElement(it) }.getOrNull() }
+                .ifEmpty {
+                    document.select(popularMangaSelector())
+                        .mapNotNull { runCatching { popularMangaFromElement(it) }.getOrNull() }
+                }
+
+            val hasNext = entries.isNotEmpty() &&
+                document.selectFirst(".no-posts") == null
+
+            MangasPage(entries, hasNext)
         } catch (_: Exception) {
             null
         }
@@ -151,11 +147,9 @@ abstract class ManhwaLatino : Madara() {
                     }
                 }
             } catch (_: Exception) {
-                // ignore single page failures
             }
         }
 
-        // Latest first (usually what people search for), then popular.
         for (p in 1..listPagesToScan) {
             ingest(latestUpdatesRequest(p))
         }

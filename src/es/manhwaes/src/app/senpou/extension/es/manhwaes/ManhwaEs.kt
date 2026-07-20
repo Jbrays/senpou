@@ -9,12 +9,12 @@ import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
 import keiyoushi.network.rateLimit
-import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import okhttp3.ResponseBody.Companion.asResponseBody
+import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 import rx.Observable
 import java.text.Normalizer
@@ -23,10 +23,7 @@ import java.util.Locale
 import kotlin.math.min
 import kotlin.time.Duration.Companion.seconds
 
-/**
- * Mirror / clone stack of Manhwa-Latino (Madara).
- * Same search strategy: native /search/… often 429 in-app; fall back to list scan.
- */
+/** Mirror of Manhwa-Latino with the same search strategy. */
 @Source
 abstract class ManhwaEs : Madara() {
     override val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale("es"))
@@ -35,9 +32,8 @@ abstract class ManhwaEs : Madara() {
     override val sendViewCount = false
     override val fetchGenres = false
 
-    private val searchPathToken = "1788a865"
     private val searchPageSize = 24
-    private val listPagesToScan = 6
+    private val listPagesToScan = 3
 
     override val client: OkHttpClient = super.client.newBuilder()
         .addInterceptor { chain ->
@@ -67,33 +63,10 @@ abstract class ManhwaEs : Madara() {
 
             return@addInterceptor response
         }
-        .rateLimit(1, 2.seconds)
+        .rateLimit(1, 1.seconds)
         .build()
 
-    override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
-        val trimmed = query.trim()
-        if (trimmed.isEmpty()) {
-            return popularMangaRequest(page)
-        }
-
-        val url = baseUrl.toHttpUrl().newBuilder().apply {
-            addPathSegment("search")
-            addPathSegment(searchPathToken)
-            addPathSegment(trimmed)
-            if (page > 1) {
-                addPathSegment("page")
-                addPathSegment(page.toString())
-            }
-            addPathSegment("")
-        }.build()
-
-        val searchHeaders = headers.newBuilder()
-            .set("Referer", "$baseUrl/")
-            .set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
-            .build()
-
-        return GET(url, searchHeaders)
-    }
+    override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request = searchLoadMoreRequest(page, query, filters)
 
     override fun fetchSearchManga(page: Int, query: String, filters: FilterList): Observable<MangasPage> {
         val trimmed = query.trim()
@@ -102,19 +75,38 @@ abstract class ManhwaEs : Madara() {
         }
 
         return Observable.fromCallable {
-            tryNativeSearch(page, trimmed, filters)?.let { return@fromCallable it }
+            val ajax = tryAjaxSearch(page, trimmed, filters)
+            if (ajax != null && (ajax.mangas.isNotEmpty() || page > 1)) {
+                return@fromCallable ajax
+            }
             scanListsForQuery(trimmed, page)
         }
     }
 
-    private fun tryNativeSearch(page: Int, query: String, filters: FilterList): MangasPage? {
+    private fun tryAjaxSearch(page: Int, query: String, filters: FilterList): MangasPage? {
         return try {
-            val response = client.newCall(searchMangaRequest(page, query, filters)).execute()
+            val response = client.newCall(searchLoadMoreRequest(page, query, filters)).execute()
             if (!response.isSuccessful) {
                 response.close()
                 return null
             }
-            searchMangaParse(response)
+            val body = response.body.string()
+            if (body.isBlank() || body == "0") {
+                return null
+            }
+
+            val document = Jsoup.parse(body, baseUrl)
+            val entries = document.select(searchMangaSelector())
+                .mapNotNull { runCatching { searchMangaFromElement(it) }.getOrNull() }
+                .ifEmpty {
+                    document.select(popularMangaSelector())
+                        .mapNotNull { runCatching { popularMangaFromElement(it) }.getOrNull() }
+                }
+
+            val hasNext = entries.isNotEmpty() &&
+                document.selectFirst(".no-posts") == null
+
+            MangasPage(entries, hasNext)
         } catch (_: Exception) {
             null
         }

@@ -6,8 +6,8 @@ plugins {
 
 keiyoushi {
     name = "Senpou Manhwa-ES"
-    // Senpou: search via list-scan fallback when /search/ returns 429
-    versionCode = 4
+    // Senpou: AJAX madara_load_more search + fast list fallback
+    versionCode = 5
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"
