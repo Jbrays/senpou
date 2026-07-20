@@ -11,7 +11,7 @@
       {
         "name": "Senpou Ikigai Mangas",
         "lang": "es",
-        "id": "7540019444621673796",
+        "id": 7540019444621673796,
         "baseUrl": "https://visorikigai.gettocaboca.com"
       }
     ]
@@ -28,7 +28,7 @@
       {
         "name": "Senpou Manhwa-ES",
         "lang": "es",
-        "id": "2982626324099244286",
+        "id": 2982626324099244286,
         "baseUrl": "https://manhwa-es.com"
       }
     ]
@@ -45,7 +45,7 @@
       {
         "name": "Senpou Manhwa-Latino",
         "lang": "es",
-        "id": "7794520053007103566",
+        "id": 7794520053007103566,
         "baseUrl": "https://manhwa-latino.com"
       }
     ]
@@ -62,7 +62,7 @@
       {
         "name": "Senpou TopComicPorno",
         "lang": "es",
-        "id": "8707774780656559688",
+        "id": 8707774780656559688,
         "baseUrl": "https://topcomicporno.com"
       }
     ]
