@@ -1,0 +1,9 @@
+app.senpou.extension.es.ikigaimangas.ExtensionGenerated
+app.senpou.extension.es.ikigaimangas.QwikSeriesDto: app.senpou.extension.es.ikigaimangas.QwikSeriesDto$Companion Companion
+app.senpou.extension.es.ikigaimangas.QwikSeriesDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+app.senpou.extension.es.ikigaimangas.QwikData: app.senpou.extension.es.ikigaimangas.QwikData$Companion Companion
+app.senpou.extension.es.ikigaimangas.QwikData$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+app.senpou.extension.es.ikigaimangas.ExtensionGenerated: ExtensionGenerated()
+app.senpou.extension.es.ikigaimangas.QwikSeriesDto$Companion: kotlinx.serialization.KSerializer serializer()
+app.senpou.extension.es.ikigaimangas.QwikData$Companion: kotlinx.serialization.KSerializer serializer()
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$getQfuncFromWebView$1$1$1: void onQfunc(java.lang.String)

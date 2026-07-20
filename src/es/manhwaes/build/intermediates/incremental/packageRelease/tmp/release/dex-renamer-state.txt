@@ -1,0 +1,4 @@
+#Mon Jul 20 14:18:03 PET 2026
+base.0=/home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -5,7 +5,7 @@ plugins {
 }
 
 keiyoushi {
-    name = "TopComicPorno"
+    name = "Senpou TopComicPorno"
     versionCode = 0
     contentWarning = ContentWarning.NSFW
     libVersion = "1.4"

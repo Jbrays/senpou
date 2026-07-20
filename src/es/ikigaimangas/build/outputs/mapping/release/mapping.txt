@@ -1,0 +1,1058 @@
+# compiler: R8
+# compiler_version: 9.3.16
+# min_api: 26
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: 03af2ae57cece32257f7c006de86481c1bfb45c8eb437cdbb76ccd65d6921da7
+# pg_map_hash: SHA-256 03af2ae57cece32257f7c006de86481c1bfb45c8eb437cdbb76ccd65d6921da7
+app.senpou.extension.es.ikigaimangas.ExtensionGenerated -> app.senpou.extension.es.ikigaimangas.ExtensionGenerated:
+# {"id":"sourceFile","fileName":"ExtensionGenerated.kt"}
+    kotlin.Lazy app.senpou.extension.es.ikigaimangas.IkigaiMangas.baseUrlHost$delegate -> a
+    boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.shouldFetchDomain -> b
+    java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.imageCdnUrl -> c
+    boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.supportsLatest -> d
+    kotlin.Lazy app.senpou.extension.es.ikigaimangas.IkigaiMangas.client$delegate -> e
+    android.content.SharedPreferences app.senpou.extension.es.ikigaimangas.IkigaiMangas.preferences -> f
+    java.text.SimpleDateFormat app.senpou.extension.es.ikigaimangas.IkigaiMangas.dateFormat -> g
+    java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.seriesCache -> h
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/util/ArrayList;"}
+    int $r8$clinit -> i
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:3:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():43:43 -> <init>
+    1:3:void <init>():16 -> <init>
+    4:16:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():48:48 -> <init>
+    4:16:void <init>():16 -> <init>
+    17:18:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():50:50 -> <init>
+    17:18:void <init>():16 -> <init>
+    19:22:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():69:69 -> <init>
+    19:22:void <init>():16 -> <init>
+    23:24:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():71:71 -> <init>
+    23:24:void <init>():16 -> <init>
+    25:35:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():73:73 -> <init>
+    25:35:void <init>():16 -> <init>
+    36:37:android.app.Application keiyoushi.utils.ContextKt.getApplicationContext():7:7 -> <init>
+    36:37:android.content.SharedPreferences keiyoushi.utils.PreferencesKt.getPreferences(long):23 -> <init>
+    36:37:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():480 -> <init>
+    36:37:void <init>():16 -> <init>
+    38:46:android.content.SharedPreferences keiyoushi.utils.PreferencesKt.getPreferences(long):23:23 -> <init>
+    38:46:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():480 -> <init>
+    38:46:void <init>():16 -> <init>
+    47:48:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():481:481 -> <init>
+    47:48:void <init>():16 -> <init>
+    49:50:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():109:109 -> <init>
+    49:50:void <init>():16 -> <init>
+    51:62:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.<init>():114:114 -> <init>
+    51:62:void <init>():16 -> <init>
+    1:3:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):74:74 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;)Lokhttp3/OkHttpClient;"}
+    4:15:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):75:75 -> a
+    16:24:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):575:575 -> a
+    25:39:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77:77 -> a
+    40:43:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):40:40 -> a
+    40:43:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    44:46:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):0:0 -> a
+    44:46:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    44:46:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    47:48:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):43:43 -> a
+    47:48:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    47:48:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    49:51:void keiyoushi.network.RateLimitRule.<init>(int,long,long,kotlin.jvm.functions.Function1,kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> a
+    49:51:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):43 -> a
+    49:51:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    49:51:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    52:55:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):45:45 -> a
+    52:55:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    52:55:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    56:70:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):153:153 -> a
+    56:70:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    56:70:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    71:76:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):152:152 -> a
+    71:76:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    71:76:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    77:86:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):154:154 -> a
+    77:86:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    77:86:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    87:90:void keiyoushi.network.RateLimitInterceptor.addRule(keiyoushi.network.RateLimitRule):97:97 -> a
+    87:90:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):47 -> a
+    87:90:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    87:90:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    91:92:long keiyoushi.network.RateLimitRule.getInterval-UwyO8pc():60:60 -> a
+    91:92:void keiyoushi.network.RateLimitInterceptor.addRule(keiyoushi.network.RateLimitRule):97 -> a
+    91:92:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):47 -> a
+    91:92:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    91:92:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    93:94:kotlin.jvm.functions.Function1 keiyoushi.network.RateLimitRule.getShouldLimit():61:61 -> a
+    93:94:void keiyoushi.network.RateLimitInterceptor.addRule(keiyoushi.network.RateLimitRule):97 -> a
+    93:94:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):47 -> a
+    93:94:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    93:94:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    95:99:void keiyoushi.network.RateLimitInterceptor$RateLimit.<init>(int,long,long,kotlin.jvm.functions.Function1,kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> a
+    95:99:void keiyoushi.network.RateLimitInterceptor.addRule(keiyoushi.network.RateLimitRule):97 -> a
+    95:99:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):47 -> a
+    95:99:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    95:99:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    100:103:void keiyoushi.network.RateLimitInterceptor.addRule(keiyoushi.network.RateLimitRule):97:97 -> a
+    100:103:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):47 -> a
+    100:103:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    100:103:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    104:115:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):51:51 -> a
+    104:115:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    104:115:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    116:118:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):52:52 -> a
+    116:118:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    116:118:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    119:126:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):54:54 -> a
+    119:126:okhttp3.OkHttpClient$Builder keiyoushi.network.RateLimitKt.rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):37 -> a
+    119:126:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):77 -> a
+    127:131:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):78:78 -> a
+    1:11:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():52:52 -> b
+    12:13:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():53:53 -> b
+    14:26:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainPref(android.content.SharedPreferences):359:359 -> b
+    14:26:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():54 -> b
+    27:34:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():56:56 -> b
+    35:42:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():57:57 -> b
+    43:62:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():58:58 -> b
+    63:79:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():59:59 -> b
+    80:103:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():61:61 -> b
+    104:116:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():62:62 -> b
+    117:140:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():63:63 -> b
+    141:152:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():64:64 -> b
+    153:166:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchDomainUrl():65:65 -> b
+    1:1:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):246:246 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Ljava/util/ArrayList;I)Leu/kanade/tachiyomi/source/model/MangasPage;"}
+    2:2:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.getShowNsfwPref(android.content.SharedPreferences):362:362 -> c
+    2:2:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):246 -> c
+    3:4:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):553:554 -> c
+    5:5:java.lang.String app.senpou.extension.es.ikigaimangas.QwikSeriesDto.getType():70:70 -> c
+    5:5:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):249 -> c
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    6:6:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):249:249 -> c
+    7:7:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):554:554 -> c
+    8:9:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):556:557 -> c
+    10:10:boolean app.senpou.extension.es.ikigaimangas.QwikSeriesDto.isMature():71:71 -> c
+    10:10:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):250 -> c
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    11:11:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):557:557 -> c
+    12:13:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):559:560 -> c
+    14:14:java.lang.String app.senpou.extension.es.ikigaimangas.QwikSeriesDto.getName():67:67 -> c
+    14:14:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):251 -> c
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:15:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):251:251 -> c
+    16:16:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):560:560 -> c
+    17:18:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):254:255 -> c
+    19:21:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):562:564 -> c
+    22:22:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):256:256 -> c
+    23:23:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.QwikSeriesDto.toSManga(java.lang.String):0:0 -> c
+    23:23:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):256 -> c
+    24:27:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.QwikSeriesDto.toSManga(java.lang.String):73:76 -> c
+    24:27:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):256 -> c
+    28:28:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):564:564 -> c
+    29:29:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.qwikDataParse(java.lang.String,java.util.List,int):258:258 -> c
+    1:3:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListParse(okhttp3.Response):43:43 -> chapterListParse
+    4:9:java.lang.Void app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListParse(okhttp3.Response):334:334 -> chapterListParse
+    4:9:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListParse(okhttp3.Response):43 -> chapterListParse
+    1:3:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(eu.kanade.tachiyomi.source.model.SManga):43:43 -> chapterListRequest
+    4:9:java.lang.Void app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(eu.kanade.tachiyomi.source.model.SManga):333:333 -> chapterListRequest
+    4:9:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(eu.kanade.tachiyomi.source.model.SManga):43 -> chapterListRequest
+    4:12:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):345:345 -> d
+    13:17:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):346:346 -> d
+    18:22:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):347:347 -> d
+    23:27:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):348:348 -> d
+    28:30:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):349:349 -> d
+    31:39:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):351:351 -> d
+    40:44:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):352:352 -> d
+    45:49:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):353:353 -> d
+    50:54:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):354:354 -> d
+    55:59:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):355:355 -> d
+    60:63:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.setupPreferenceScreen(androidx.preference.PreferenceScreen):356:356 -> d
+    4:16:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList(eu.kanade.tachiyomi.source.model.SManga):288:288 -> fetchChapterList
+    1:3:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):165:167 -> fetchSearchManga
+    4:5:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():217:218 -> fetchSearchManga
+    4:5:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    6:9:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):368:371 -> fetchSearchManga
+    6:9:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    6:9:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    10:11:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):571:572 -> fetchSearchManga
+    10:11:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    10:11:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    12:12:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):372:372 -> fetchSearchManga
+    12:12:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    12:12:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    13:13:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):573:573 -> fetchSearchManga
+    13:13:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    13:13:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    14:17:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):373:376 -> fetchSearchManga
+    14:17:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    14:17:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    18:19:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):403:404 -> fetchSearchManga
+    18:19:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    18:19:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    20:20:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView(java.lang.String,okhttp3.Headers):407:407 -> fetchSearchManga
+    20:20:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218 -> fetchSearchManga
+    20:20:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    21:30:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():219:228 -> fetchSearchManga
+    21:30:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    31:31:kotlinx.serialization.json.Json keiyoushi.utils.JsonKt.getJsonInstance():17:17 -> fetchSearchManga
+    31:31:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():510 -> fetchSearchManga
+    31:31:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    32:32:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():511:511 -> fetchSearchManga
+    32:32:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    33:33:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():510:510 -> fetchSearchManga
+    33:33:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    34:34:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():512:512 -> fetchSearchManga
+    34:34:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    35:35:java.util.List app.senpou.extension.es.ikigaimangas.QwikData.getObjects():17:17 -> fetchSearchManga
+    35:35:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():513 -> fetchSearchManga
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    35:35:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    36:36:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():514:514 -> fetchSearchManga
+    36:36:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    37:37:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():517:517 -> fetchSearchManga
+    37:37:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    38:38:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():519:519 -> fetchSearchManga
+    38:38:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    39:39:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():522:522 -> fetchSearchManga
+    39:39:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    40:40:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():524:524 -> fetchSearchManga
+    40:40:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    41:43:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():526:528 -> fetchSearchManga
+    41:43:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    44:44:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():531:531 -> fetchSearchManga
+    44:44:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    45:45:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():536:536 -> fetchSearchManga
+    45:45:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    46:46:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():538:538 -> fetchSearchManga
+    46:46:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    47:47:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():533:533 -> fetchSearchManga
+    47:47:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    48:48:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():526:526 -> fetchSearchManga
+    48:48:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    49:49:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():542:542 -> fetchSearchManga
+    49:49:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    50:50:kotlinx.serialization.json.Json keiyoushi.utils.JsonKt.getJsonInstance():17:17 -> fetchSearchManga
+    50:50:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():543 -> fetchSearchManga
+    50:50:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    51:51:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():543:543 -> fetchSearchManga
+    51:51:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    52:52:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():542:542 -> fetchSearchManga
+    52:52:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    53:53:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():229:229 -> fetchSearchManga
+    53:53:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    54:54:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):170:170 -> fetchSearchManga
+    55:55:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():510:510 -> fetchSearchManga
+    55:55:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    56:56:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQuerySeriesList():218:218 -> fetchSearchManga
+    56:56:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):169 -> fetchSearchManga
+    57:59:rx.Observable app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):173:175 -> fetchSearchManga
+    1:2:keiyoushi.source.CustomUrlPreferences app.senpou.extension.es.ikigaimangas.ExtensionGeneratedKt.access$getCustomUrlPrefs$p():1:1 -> getBaseUrl
+    1:2:java.lang.String getBaseUrl():27 -> getBaseUrl
+    3:4:java.lang.String keiyoushi.source.CustomUrlPreferences.getBaseUrl():31:31 -> getBaseUrl
+    3:4:java.lang.String getBaseUrl():27 -> getBaseUrl
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    5:16:java.lang.String keiyoushi.source.CustomUrlPreferences.getBaseUrl():31:31 -> getBaseUrl
+    5:16:java.lang.String getBaseUrl():27 -> getBaseUrl
+    4:24:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getChapterUrl(eu.kanade.tachiyomi.source.model.SChapter):286:286 -> getChapterUrl
+    1:9:okhttp3.OkHttpClient app.senpou.extension.es.ikigaimangas.IkigaiMangas.getClient():73:73 -> getClient
+    1:4:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():336:339 -> getFilterList
+    5:10:java.util.List app.senpou.extension.es.ikigaimangas.FiltersKt.getSortProperties():26:31 -> getFilterList
+    5:10:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():339 -> getFilterList
+    11:11:java.util.List app.senpou.extension.es.ikigaimangas.FiltersKt.getSortProperties():25:25 -> getFilterList
+    11:11:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():339 -> getFilterList
+    12:13:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():339:340 -> getFilterList
+    14:18:java.util.List app.senpou.extension.es.ikigaimangas.FiltersKt.getStatusFilters():35:39 -> getFilterList
+    14:18:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():340 -> getFilterList
+    19:19:java.util.List app.senpou.extension.es.ikigaimangas.FiltersKt.getStatusFilters():34:34 -> getFilterList
+    19:19:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():340 -> getFilterList
+    20:20:void app.senpou.extension.es.ikigaimangas.StatusFilter.<init>(java.lang.String,java.util.List):0:0 -> getFilterList
+    20:20:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():340 -> getFilterList
+    21:21:void app.senpou.extension.es.ikigaimangas.StatusFilter.<init>(java.lang.String,java.util.List):9:9 -> getFilterList
+    21:21:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():340 -> getFilterList
+    22:22:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():341:341 -> getFilterList
+    23:75:java.util.List app.senpou.extension.es.ikigaimangas.FiltersKt.getGenreFilters():43:95 -> getFilterList
+    23:75:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():341 -> getFilterList
+    76:76:java.util.List app.senpou.extension.es.ikigaimangas.FiltersKt.getGenreFilters():42:42 -> getFilterList
+    76:76:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():341 -> getFilterList
+    77:77:void app.senpou.extension.es.ikigaimangas.GenreFilter.<init>(java.lang.String,java.util.List):0:0 -> getFilterList
+    77:77:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():341 -> getFilterList
+    78:78:void app.senpou.extension.es.ikigaimangas.GenreFilter.<init>(java.lang.String,java.util.List):6:6 -> getFilterList
+    78:78:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():341 -> getFilterList
+    79:79:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():341:341 -> getFilterList
+    80:80:eu.kanade.tachiyomi.source.model.FilterList app.senpou.extension.es.ikigaimangas.IkigaiMangas.getFilterList():336:336 -> getFilterList
+    1:6:long getId():0:0 -> getId
+    1:3:java.lang.String getLang():21:21 -> getLang
+    4:34:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getMangaUrl(eu.kanade.tachiyomi.source.model.SManga):261:261 -> getMangaUrl
+    1:3:java.lang.String getName():18:18 -> getName
+    1:3:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.getSupportsLatest():71:71 -> getSupportsLatest
+    1:4:okhttp3.Headers$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.headersBuilder():111:111 -> headersBuilder
+    5:21:okhttp3.Headers$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.headersBuilder():112:112 -> headersBuilder
+    4:9:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.imageUrlParse(okhttp3.Response):332:332 -> imageUrlParse
+    6:9:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):146:146 -> latestUpdatesParse
+    10:18:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):147:147 -> latestUpdatesParse
+    19:29:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):500:500 -> latestUpdatesParse
+    30:43:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):501:501 -> latestUpdatesParse
+    44:45:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):502:502 -> latestUpdatesParse
+    46:51:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):148:148 -> latestUpdatesParse
+    52:70:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):149:149 -> latestUpdatesParse
+    71:89:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):150:150 -> latestUpdatesParse
+    90:114:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):151:151 -> latestUpdatesParse
+    115:118:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):502:502 -> latestUpdatesParse
+    119:128:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):154:154 -> latestUpdatesParse
+    129:134:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesParse(okhttp3.Response):155:155 -> latestUpdatesParse
+    1:4:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesRequest(int):138:138 -> latestUpdatesRequest
+    5:13:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.getShowNsfwPref(android.content.SharedPreferences):362:362 -> latestUpdatesRequest
+    5:13:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesRequest(int):139 -> latestUpdatesRequest
+    14:23:okhttp3.Headers$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.enableNsfw(okhttp3.Headers$Builder,boolean):466:466 -> latestUpdatesRequest
+    14:23:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesRequest(int):139 -> latestUpdatesRequest
+    24:27:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesRequest(int):140:140 -> latestUpdatesRequest
+    28:55:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.latestUpdatesRequest(int):142:142 -> latestUpdatesRequest
+    6:9:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):266:266 -> mangaDetailsParse
+    10:18:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):267:267 -> mangaDetailsParse
+    19:24:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):268:268 -> mangaDetailsParse
+    25:43:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):269:269 -> mangaDetailsParse
+    44:62:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):270:270 -> mangaDetailsParse
+    63:79:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):271:271 -> mangaDetailsParse
+    80:95:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):272:272 -> mangaDetailsParse
+    96:158:int app.senpou.extension.es.ikigaimangas.IkigaiMangas.parseStatus(java.lang.String):278:278 -> mangaDetailsParse
+    96:158:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):272 -> mangaDetailsParse
+    159:161:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):272:272 -> mangaDetailsParse
+    162:192:eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse(okhttp3.Response):273:273 -> mangaDetailsParse
+    4:44:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsRequest(eu.kanade.tachiyomi.source.model.SManga):263:263 -> mangaDetailsRequest
+    4:9:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):319:319 -> pageListParse
+    10:13:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):320:320 -> pageListParse
+    14:21:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):321:321 -> pageListParse
+    22:25:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):322:322 -> pageListParse
+    26:35:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.enableNsfw(okhttp3.Request$Builder,boolean):467:467 -> pageListParse
+    26:35:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):323 -> pageListParse
+    36:39:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):324:324 -> pageListParse
+    40:55:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):325:325 -> pageListParse
+    56:64:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):327:327 -> pageListParse
+    65:75:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):566:566 -> pageListParse
+    76:93:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):568:568 -> pageListParse
+    94:99:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):569:569 -> pageListParse
+    100:115:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):328:328 -> pageListParse
+    116:121:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListParse(okhttp3.Response):569:569 -> pageListParse
+    4:34:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.pageListRequest(eu.kanade.tachiyomi.source.model.SChapter):316:316 -> pageListRequest
+    6:9:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):125:125 -> popularMangaParse
+    10:18:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):126:126 -> popularMangaParse
+    19:29:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):496:496 -> popularMangaParse
+    30:43:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):497:497 -> popularMangaParse
+    44:45:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):498:498 -> popularMangaParse
+    46:51:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):127:127 -> popularMangaParse
+    52:70:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):128:128 -> popularMangaParse
+    71:89:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):129:129 -> popularMangaParse
+    90:107:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):130:130 -> popularMangaParse
+    108:123:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):131:131 -> popularMangaParse
+    124:127:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):498:498 -> popularMangaParse
+    128:133:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaParse(okhttp3.Response):134:134 -> popularMangaParse
+    1:4:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaRequest(int):117:117 -> popularMangaRequest
+    5:13:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.getShowNsfwPref(android.content.SharedPreferences):362:362 -> popularMangaRequest
+    5:13:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaRequest(int):118 -> popularMangaRequest
+    14:23:okhttp3.Headers$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.enableNsfw(okhttp3.Headers$Builder,boolean):466:466 -> popularMangaRequest
+    14:23:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaRequest(int):118 -> popularMangaRequest
+    24:27:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaRequest(int):119:119 -> popularMangaRequest
+    28:44:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.popularMangaRequest(int):121:121 -> popularMangaRequest
+    6:9:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):233:233 -> searchMangaParse
+    10:18:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):234:234 -> searchMangaParse
+    19:29:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):549:549 -> searchMangaParse
+    30:43:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):550:550 -> searchMangaParse
+    44:45:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):551:551 -> searchMangaParse
+    46:51:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):235:235 -> searchMangaParse
+    52:70:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):236:236 -> searchMangaParse
+    71:89:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):237:237 -> searchMangaParse
+    90:114:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):238:238 -> searchMangaParse
+    115:118:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):551:551 -> searchMangaParse
+    119:128:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):241:241 -> searchMangaParse
+    129:134:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaParse(okhttp3.Response):242:242 -> searchMangaParse
+    1:1:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):179:179 -> searchMangaRequest
+    2:2:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):181:181 -> searchMangaRequest
+    3:3:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):504:504 -> searchMangaRequest
+    4:5:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):185:186 -> searchMangaRequest
+    6:6:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):505:505 -> searchMangaRequest
+    7:7:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):187:187 -> searchMangaRequest
+    8:8:long app.senpou.extension.es.ikigaimangas.Genre.getId():5:5 -> searchMangaRequest
+    8:8:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):188 -> searchMangaRequest
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    9:9:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):188:188 -> searchMangaRequest
+    10:11:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):192:193 -> searchMangaRequest
+    12:12:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):507:507 -> searchMangaRequest
+    13:13:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):194:194 -> searchMangaRequest
+    14:14:long app.senpou.extension.es.ikigaimangas.Status.getId():8:8 -> searchMangaRequest
+    14:14:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):195 -> searchMangaRequest
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    15:15:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):195:195 -> searchMangaRequest
+    16:17:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):199:200 -> searchMangaRequest
+    18:18:java.lang.String app.senpou.extension.es.ikigaimangas.SortByFilter.getSelected() -> searchMangaRequest
+    18:18:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):200 -> searchMangaRequest
+    19:19:java.lang.String app.senpou.extension.es.ikigaimangas.SortProperty.getValue():21:21 -> searchMangaRequest
+    19:19:java.lang.String app.senpou.extension.es.ikigaimangas.SortByFilter.getSelected():18 -> searchMangaRequest
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    19:19:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):200 -> searchMangaRequest
+    20:21:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):200:201 -> searchMangaRequest
+    22:22:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):207:207 -> searchMangaRequest
+    23:23:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):209:209 -> searchMangaRequest
+    24:24:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.getShowNsfwPref(android.content.SharedPreferences):362:362 -> searchMangaRequest
+    24:24:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):210 -> searchMangaRequest
+    25:25:okhttp3.Headers$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.enableNsfw(okhttp3.Headers$Builder,boolean):466:466 -> searchMangaRequest
+    25:25:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):210 -> searchMangaRequest
+    26:26:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):211:211 -> searchMangaRequest
+    27:27:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):213:213 -> searchMangaRequest
+    4:5:keiyoushi.source.CustomUrlPreferences app.senpou.extension.es.ikigaimangas.ExtensionGeneratedKt.access$getCustomUrlPrefs$p():1:1 -> setupPreferenceScreen
+    4:5:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    6:8:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):0:0 -> setupPreferenceScreen
+    6:8:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    9:17:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):34:34 -> setupPreferenceScreen
+    9:17:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    18:22:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):35:35 -> setupPreferenceScreen
+    18:22:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    23:27:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):36:36 -> setupPreferenceScreen
+    23:27:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    28:30:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):37:37 -> setupPreferenceScreen
+    28:30:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    31:35:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):38:38 -> setupPreferenceScreen
+    31:35:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    36:42:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):40:40 -> setupPreferenceScreen
+    36:42:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    43:60:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):41:41 -> setupPreferenceScreen
+    43:60:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    61:63:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):42:42 -> setupPreferenceScreen
+    61:63:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    64:71:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):44:44 -> setupPreferenceScreen
+    64:71:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    72:79:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):62:62 -> setupPreferenceScreen
+    72:79:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    80:82:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen(androidx.preference.PreferenceScreen):87:87 -> setupPreferenceScreen
+    80:82:void setupPreferenceScreen(androidx.preference.PreferenceScreen):30 -> setupPreferenceScreen
+    83:86:void setupPreferenceScreen(androidx.preference.PreferenceScreen):31:31 -> setupPreferenceScreen
+app.senpou.extension.es.ikigaimangas.ExtensionGeneratedKt -> h:
+# {"id":"sourceFile","fileName":"ExtensionGenerated.kt"}
+    keiyoushi.source.CustomUrlPreferences customUrlPrefs -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lg;"}
+    1:2:void <clinit>():9:9 -> <clinit>
+    3:4:android.app.Application keiyoushi.utils.ContextKt.getApplicationContext():7:7 -> <clinit>
+    3:4:android.content.SharedPreferences keiyoushi.utils.PreferencesKt.getPreferences(long):23 -> <clinit>
+    3:4:void <clinit>():10 -> <clinit>
+    5:14:android.content.SharedPreferences keiyoushi.utils.PreferencesKt.getPreferences(long):23:23 -> <clinit>
+    5:14:void <clinit>():10 -> <clinit>
+    15:20:void <clinit>():9:9 -> <clinit>
+app.senpou.extension.es.ikigaimangas.FiltersKt -> R8$$REMOVED$$CLASS$$0:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+app.senpou.extension.es.ikigaimangas.Genre -> i:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+    long id -> a
+    4:9:void <init>(java.lang.String,long):5:5 -> <init>
+app.senpou.extension.es.ikigaimangas.GenreFilter -> j:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+app.senpou.extension.es.ikigaimangas.IkigaiMangas -> R8$$REMOVED$$CLASS$$1:
+# {"id":"sourceFile","fileName":"IkigaiMangas.kt"}
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$$ExternalSyntheticLambda0 -> k:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int IkigaiMangas$$ExternalSyntheticLambda0.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:6:void IkigaiMangas$$ExternalSyntheticLambda0.<init>(int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    13:41:java.lang.CharSequence app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie$lambda$1(java.util.Map$Entry):104:104 -> invoke
+    13:41:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda0.invoke(java.lang.Object):0 -> invoke
+      # {"id":"com.android.tools.r8.synthesized"}
+    42:48:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda0.invoke(java.lang.Object):0:0 -> invoke
+    49:64:java.lang.CharSequence app.senpou.extension.es.ikigaimangas.IkigaiMangas.mangaDetailsParse$lambda$0$0$0(org.jsoup.nodes.Element):273:273 -> invoke
+    49:64:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda0.invoke(java.lang.Object):0 -> invoke
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$$ExternalSyntheticLambda1 -> l:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int IkigaiMangas$$ExternalSyntheticLambda1.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    app.senpou.extension.es.ikigaimangas.IkigaiMangas app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$1$ab194ef993093ff95f6b1dea561024ed2bb4db0ff019ed9e21b7ff6ae1346a81$0.f$0 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void IkigaiMangas$$ExternalSyntheticLambda1.<init>(app.senpou.extension.es.ikigaimangas.ExtensionGenerated,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    15:30:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.baseUrlHost_delegate$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas):48:48 -> invoke
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()Ljava/lang/Object;"}
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$$ExternalSyntheticLambda3 -> m:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int IkigaiMangas$$ExternalSyntheticLambda3.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    app.senpou.extension.es.ikigaimangas.IkigaiMangas app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$1$af6d0bcb053ef835c9e9e84ead09d6c417519e7f57065c09a6fa08f9a3fb3270$0.f$0 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void IkigaiMangas$$ExternalSyntheticLambda3.<init>(app.senpou.extension.es.ikigaimangas.ExtensionGenerated,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    15:18:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.HttpUrl):77:77 -> invoke
+    15:18:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda3.invoke(java.lang.Object):0 -> invoke
+      # {"id":"com.android.tools.r8.synthesized"}
+    19:26:java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas.getBaseUrlHost():48:48 -> invoke
+    19:26:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.HttpUrl):77 -> invoke
+    19:26:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda3.invoke(java.lang.Object):0 -> invoke
+    27:30:boolean app.senpou.extension.es.ikigaimangas.IkigaiMangas.client_delegate$lambda$0$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.HttpUrl):77:77 -> invoke
+    27:30:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda3.invoke(java.lang.Object):0 -> invoke
+    31:39:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda3.invoke(java.lang.Object):0:0 -> invoke
+    40:48:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Response):175:175 -> invoke
+    40:48:java.lang.Object IkigaiMangas$$ExternalSyntheticLambda3.invoke(java.lang.Object):0 -> invoke
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$$ExternalSyntheticLambda4 -> n:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    kotlin.jvm.functions.Function1 app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$1$af6d0bcb053ef835c9e9e84ead09d6c417519e7f57065c09a6fa08f9a3fb3270$1.f$0 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lm;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:6:void IkigaiMangas$$ExternalSyntheticLambda4.<init>(IkigaiMangas$$ExternalSyntheticLambda3):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm;)V"}
+    3:11:eu.kanade.tachiyomi.source.model.MangasPage app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchSearchManga$lambda$1(kotlin.jvm.functions.Function1,java.lang.Object):175:175 -> call
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/Object;)Ljava/lang/Object;"}
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$$ExternalSyntheticLambda5 -> o:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    app.senpou.extension.es.ikigaimangas.IkigaiMangas app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$1$c5b6ed184852f88105039875ab8c46617247282860588296e859290d84f63de7$0.f$0 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    eu.kanade.tachiyomi.source.model.SManga app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$1$c5b6ed184852f88105039875ab8c46617247282860588296e859290d84f63de7$0.f$1 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void IkigaiMangas$$ExternalSyntheticLambda5.<init>(app.senpou.extension.es.ikigaimangas.ExtensionGenerated,eu.kanade.tachiyomi.source.model.SManga):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    5:11:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):289:289 -> call
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()Ljava/lang/Object;"}
+    12:17:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):292:292 -> call
+    18:55:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(java.lang.String,int):303:303 -> call
+    18:55:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):292 -> call
+    56:65:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(java.lang.String,int):304:304 -> call
+    56:65:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):292 -> call
+    66:69:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(java.lang.String,int):305:305 -> call
+    66:69:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):292 -> call
+    70:79:okhttp3.Request app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterListRequest(java.lang.String,int):306:306 -> call
+    70:79:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):292 -> call
+    80:95:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):293:293 -> call
+    96:104:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294:294 -> call
+    105:115:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):576:576 -> call
+    116:129:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):577:577 -> call
+    130:131:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):578:578 -> call
+    132:137:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):309:309 -> call
+    132:137:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    138:149:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):310:310 -> call
+    138:149:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    150:168:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):311:311 -> call
+    150:168:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    169:203:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):312:312 -> call
+    169:203:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    204:205:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):313:313 -> call
+    204:205:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    206:214:long keiyoushi.utils.DateKt.tryParse(java.text.SimpleDateFormat,java.lang.String):0:0 -> call
+    206:214:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):313 -> call
+    206:214:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    215:230:long keiyoushi.utils.DateKt.tryParse(java.text.SimpleDateFormat,java.lang.String):9:9 -> call
+    215:230:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):313 -> call
+    215:230:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    231:233:eu.kanade.tachiyomi.source.model.SChapter app.senpou.extension.es.ikigaimangas.IkigaiMangas.chapterFromElement(org.jsoup.nodes.Element):313:313 -> call
+    231:233:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):294 -> call
+    234:238:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):578:578 -> call
+    239:244:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):295:295 -> call
+    245:249:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):296:296 -> call
+    250:261:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):298:298 -> call
+    262:266:java.util.List app.senpou.extension.es.ikigaimangas.IkigaiMangas.fetchChapterList$lambda$0(app.senpou.extension.es.ikigaimangas.IkigaiMangas,eu.kanade.tachiyomi.source.model.SManga):299:299 -> call
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$$ExternalSyntheticLambda8 -> p:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    kotlin.jvm.internal.Ref$ObjectRef app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    okhttp3.Headers app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$1 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$2 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.lang.String app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$3 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    kotlin.jvm.internal.Ref$ObjectRef app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$4 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.util.concurrent.CountDownLatch app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$5 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    app.senpou.extension.es.ikigaimangas.IkigaiMangas app.senpou.extension.es.ikigaimangas.IkigaiMangas$$InternalSyntheticLambda$3$9d1dc0c06a02ce074533e0eead8a6fe1ab878f0ee45d797fc41d178f56894312$0.f$6 -> g
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void IkigaiMangas$$ExternalSyntheticLambda8.<init>(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.ExtensionGenerated):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    3:4:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):377:377 -> run
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()V"}
+    5:6:android.app.Application keiyoushi.utils.ContextKt.getApplicationContext():7:7 -> run
+    5:6:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):377 -> run
+    7:9:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):377:377 -> run
+    10:17:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):378:378 -> run
+    18:24:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):379:379 -> run
+    25:31:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):380:380 -> run
+    32:46:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):381:381 -> run
+    47:55:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):383:383 -> run
+    56:60:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):382:382 -> run
+    61:70:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):393:393 -> run
+    71:75:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):400:400 -> run
+    76:80:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$1(kotlin.jvm.internal.Ref$ObjectRef,okhttp3.Headers,java.lang.String,java.lang.String,kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch,app.senpou.extension.es.ikigaimangas.IkigaiMangas):377:377 -> run
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$getQfuncFromWebView$1$1$1 -> q:
+# {"id":"sourceFile","fileName":"IkigaiMangas.kt"}
+    kotlin.jvm.internal.Ref$ObjectRef $result -> a
+    java.util.concurrent.CountDownLatch $latch -> b
+    1:3:void <init>(kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch):383:383 -> <init>
+    4:8:void <init>(kotlin.jvm.internal.Ref$ObjectRef,java.util.concurrent.CountDownLatch):0:0 -> <init>
+    4:7:void onQfunc(java.lang.String):387:387 -> onQfunc
+    8:13:void onQfunc(java.lang.String):388:388 -> onQfunc
+app.senpou.extension.es.ikigaimangas.IkigaiMangas$getQfuncFromWebView$1$1$2 -> r:
+# {"id":"sourceFile","fileName":"IkigaiMangas.kt"}
+    java.lang.String $interfaceName -> a
+    3:6:void <init>(app.senpou.extension.es.ikigaimangas.IkigaiMangas,java.lang.String):393:393 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;Ljava/lang/String;)V"}
+    7:9:void onPageFinished(android.webkit.WebView,java.lang.String):395:395 -> onPageFinished
+    10:30:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.injectFetchInterceptor(android.webkit.WebView,java.lang.String):428:428 -> onPageFinished
+    10:30:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$injectFetchInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,android.webkit.WebView,java.lang.String):43 -> onPageFinished
+    10:30:void onPageFinished(android.webkit.WebView,java.lang.String):396 -> onPageFinished
+    31:35:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.injectFetchInterceptor(android.webkit.WebView,java.lang.String):434:434 -> onPageFinished
+    31:35:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$injectFetchInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,android.webkit.WebView,java.lang.String):43 -> onPageFinished
+    31:35:void onPageFinished(android.webkit.WebView,java.lang.String):396 -> onPageFinished
+    36:38:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.injectFetchInterceptor(android.webkit.WebView,java.lang.String):436:436 -> onPageFinished
+    36:38:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$injectFetchInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,android.webkit.WebView,java.lang.String):43 -> onPageFinished
+    36:38:void onPageFinished(android.webkit.WebView,java.lang.String):396 -> onPageFinished
+    39:40:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.clickTargetButton(android.webkit.WebView):462:462 -> onPageFinished
+    39:40:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$clickTargetButton(app.senpou.extension.es.ikigaimangas.IkigaiMangas,android.webkit.WebView):43 -> onPageFinished
+    39:40:void onPageFinished(android.webkit.WebView,java.lang.String):397 -> onPageFinished
+    41:44:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.clickTargetButton(android.webkit.WebView):463:463 -> onPageFinished
+    41:44:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$clickTargetButton(app.senpou.extension.es.ikigaimangas.IkigaiMangas,android.webkit.WebView):43 -> onPageFinished
+    41:44:void onPageFinished(android.webkit.WebView,java.lang.String):397 -> onPageFinished
+app.senpou.extension.es.ikigaimangas.QwikData -> x:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    app.senpou.extension.es.ikigaimangas.QwikData$Companion Companion -> Companion
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lw;"}
+    java.util.List objects -> a
+    kotlin.Lazy[] $childSerializers -> b
+    3:5:void app.senpou.extension.es.ikigaimangas.QwikData$Companion.<init>():15:15 -> <clinit>
+    3:5:void app.senpou.extension.es.ikigaimangas.QwikData$Companion.<init>(kotlin.jvm.internal.DefaultConstructorMarker):0 -> <clinit>
+    3:5:void <clinit>():0 -> <clinit>
+    6:7:void <clinit>():0:0 -> <clinit>
+    8:27:void <clinit>():15:15 -> <clinit>
+    6:20:void <init>(int,java.util.List,kotlinx.serialization.internal.SerializationConstructorMarker):15:15 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(ILjava/util/List;)V"}
+    1:5:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):58:58 -> a
+    6:10:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):59:59 -> a
+    11:16:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):60:60 -> a
+    17:27:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):81:81 -> a
+    28:41:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):82:82 -> a
+    42:43:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):83:83 -> a
+    44:47:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):60:60 -> a
+    48:51:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):83:83 -> a
+    52:57:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):60:60 -> a
+    58:60:kotlinx.serialization.json.JsonElement unwrapJson(kotlinx.serialization.json.JsonElement):61:61 -> a
+app.senpou.extension.es.ikigaimangas.QwikData$$ExternalSyntheticLambda0 -> u:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:8:kotlinx.serialization.KSerializer app.senpou.extension.es.ikigaimangas.QwikData._childSerializers$_anonymous_():0:0 -> invoke
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()Ljava/lang/Object;"}
+app.senpou.extension.es.ikigaimangas.QwikData$$serializer -> v:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    app.senpou.extension.es.ikigaimangas.QwikData$$serializer INSTANCE -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lv;"}
+    3:5:void <init>():15:15 -> <clinit>
+    3:5:void <clinit>():0 -> <clinit>
+    6:7:void <clinit>():0:0 -> <clinit>
+    8:24:void <clinit>():15:15 -> <clinit>
+    1:3:kotlin.Lazy[] app.senpou.extension.es.ikigaimangas.QwikData.access$get$childSerializers$cp():15:15 -> childSerializers
+    1:3:kotlinx.serialization.KSerializer[] childSerializers():15 -> childSerializers
+    4:15:kotlinx.serialization.KSerializer[] childSerializers():15:15 -> childSerializers
+    1:3:app.senpou.extension.es.ikigaimangas.QwikData deserialize(kotlinx.serialization.encoding.Decoder):0:0 -> deserialize
+    1:3:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):15 -> deserialize
+    4:9:app.senpou.extension.es.ikigaimangas.QwikData deserialize(kotlinx.serialization.encoding.Decoder):15:15 -> deserialize
+    4:9:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):15 -> deserialize
+    10:11:kotlin.Lazy[] app.senpou.extension.es.ikigaimangas.QwikData.access$get$childSerializers$cp():15:15 -> deserialize
+    10:11:app.senpou.extension.es.ikigaimangas.QwikData deserialize(kotlinx.serialization.encoding.Decoder):15 -> deserialize
+    10:11:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):15 -> deserialize
+    12:83:app.senpou.extension.es.ikigaimangas.QwikData deserialize(kotlinx.serialization.encoding.Decoder):15:15 -> deserialize
+    12:83:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):15 -> deserialize
+    1:3:kotlinx.serialization.descriptors.SerialDescriptor getDescriptor():0:0 -> getDescriptor
+    1:2:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):15:15 -> serialize
+    3:8:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikData):0:0 -> serialize
+    3:8:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):15 -> serialize
+    9:14:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikData):15:15 -> serialize
+    9:14:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):15 -> serialize
+    15:30:void app.senpou.extension.es.ikigaimangas.QwikData.write$Self$ikigaimangas(app.senpou.extension.es.ikigaimangas.QwikData,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):15:15 -> serialize
+    15:30:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikData):15 -> serialize
+    15:30:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):15 -> serialize
+    31:34:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikData):15:15 -> serialize
+    31:34:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):15 -> serialize
+app.senpou.extension.es.ikigaimangas.QwikData$Companion -> w:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    1:3:kotlinx.serialization.KSerializer serializer():15:15 -> serializer
+app.senpou.extension.es.ikigaimangas.QwikSeriesDto -> a0:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    app.senpou.extension.es.ikigaimangas.QwikSeriesDto$Companion Companion -> Companion
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lz;"}
+    java.lang.String name -> a
+    java.lang.String slug -> b
+    java.lang.String cover -> c
+    java.lang.String type -> d
+    boolean isMature -> e
+    3:5:void app.senpou.extension.es.ikigaimangas.QwikSeriesDto$Companion.<init>():65:65 -> <clinit>
+    3:5:void app.senpou.extension.es.ikigaimangas.QwikSeriesDto$Companion.<init>(kotlin.jvm.internal.DefaultConstructorMarker):0 -> <clinit>
+    3:5:void <clinit>():0 -> <clinit>
+    6:8:void <clinit>():0:0 -> <clinit>
+    1:1:void <init>(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,kotlinx.serialization.internal.SerializationConstructorMarker):65:65 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V"}
+app.senpou.extension.es.ikigaimangas.QwikSeriesDto$$serializer -> y:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    app.senpou.extension.es.ikigaimangas.QwikSeriesDto$$serializer INSTANCE -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ly;"}
+    3:5:void <init>():65:65 -> <clinit>
+    3:5:void <clinit>():0 -> <clinit>
+    6:7:void <clinit>():0:0 -> <clinit>
+    8:45:void <clinit>():65:65 -> <clinit>
+    1:31:kotlinx.serialization.KSerializer[] childSerializers():65:65 -> childSerializers
+    1:3:app.senpou.extension.es.ikigaimangas.QwikSeriesDto deserialize(kotlinx.serialization.encoding.Decoder):0:0 -> deserialize
+    1:3:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):65 -> deserialize
+    4:161:app.senpou.extension.es.ikigaimangas.QwikSeriesDto deserialize(kotlinx.serialization.encoding.Decoder):65:65 -> deserialize
+    4:161:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):65 -> deserialize
+    1:3:kotlinx.serialization.descriptors.SerialDescriptor getDescriptor():0:0 -> getDescriptor
+    1:2:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):65:65 -> serialize
+    3:8:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikSeriesDto):0:0 -> serialize
+    3:8:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):65 -> serialize
+    9:14:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikSeriesDto):65:65 -> serialize
+    9:14:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):65 -> serialize
+    15:75:void app.senpou.extension.es.ikigaimangas.QwikSeriesDto.write$Self$ikigaimangas(app.senpou.extension.es.ikigaimangas.QwikSeriesDto,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):65:65 -> serialize
+    15:75:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikSeriesDto):65 -> serialize
+    15:75:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):65 -> serialize
+    76:79:void serialize(kotlinx.serialization.encoding.Encoder,app.senpou.extension.es.ikigaimangas.QwikSeriesDto):65:65 -> serialize
+    76:79:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):65 -> serialize
+app.senpou.extension.es.ikigaimangas.QwikSeriesDto$Companion -> z:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    1:3:kotlinx.serialization.KSerializer serializer():65:65 -> serializer
+app.senpou.extension.es.ikigaimangas.SortByFilter -> g0:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+    java.util.List sortProperties -> a
+    4:14:void <init>(java.lang.String,java.util.List):98:98 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/util/List;)V"}
+    15:28:void <init>(java.lang.String,java.util.List):99:99 -> <init>
+    29:30:void <init>(java.lang.String,java.util.List):100:100 -> <init>
+    31:32:java.lang.String app.senpou.extension.es.ikigaimangas.SortProperty.getName():21:21 -> <init>
+    31:32:void <init>(java.lang.String,java.util.List):14 -> <init>
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    33:37:void <init>(java.lang.String,java.util.List):100:100 -> <init>
+    38:45:void <init>(java.lang.String,java.util.List):103:103 -> <init>
+    46:51:void <init>(java.lang.String,java.util.List):15:15 -> <init>
+    52:59:void <init>(java.lang.String,java.util.List):11:11 -> <init>
+app.senpou.extension.es.ikigaimangas.SortProperty -> h0:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+    java.lang.String name -> a
+    java.lang.String value -> b
+    1:8:void <init>(java.lang.String,java.lang.String):21:21 -> <init>
+    1:3:java.lang.String toString():22:22 -> toString
+app.senpou.extension.es.ikigaimangas.Status -> i0:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+    long id -> a
+    4:9:void <init>(java.lang.String,long):8:8 -> <init>
+app.senpou.extension.es.ikigaimangas.StatusFilter -> j0:
+# {"id":"sourceFile","fileName":"Filters.kt"}
+keiyoushi.network.RateLimitInterceptor -> e0:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    java.util.List rateLimits -> a
+    1:3:void <init>(keiyoushi.network.RateLimitRule):64:64 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lf0;)V"}
+    4:5:void <init>(keiyoushi.network.RateLimitRule):94:94 -> <init>
+    6:7:long keiyoushi.network.RateLimitRule.getPeriod-UwyO8pc():59:59 -> <init>
+    6:7:void <init>(keiyoushi.network.RateLimitRule):94 -> <init>
+    8:9:long keiyoushi.network.RateLimitRule.getInterval-UwyO8pc():60:60 -> <init>
+    8:9:void <init>(keiyoushi.network.RateLimitRule):94 -> <init>
+    10:11:kotlin.jvm.functions.Function1 keiyoushi.network.RateLimitRule.getShouldLimit():61:61 -> <init>
+    10:11:void <init>(keiyoushi.network.RateLimitRule):94 -> <init>
+    12:14:void keiyoushi.network.RateLimitInterceptor$RateLimit.<init>(int,long,long,kotlin.jvm.functions.Function1,kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <init>
+    12:14:void <init>(keiyoushi.network.RateLimitRule):94 -> <init>
+    15:25:void <init>(keiyoushi.network.RateLimitRule):94:94 -> <init>
+    6:9:okhttp3.Response intercept(okhttp3.Interceptor$Chain):101:101 -> intercept
+    10:13:okhttp3.Response intercept(okhttp3.Interceptor$Chain):102:102 -> intercept
+    14:23:okhttp3.Response intercept(okhttp3.Interceptor$Chain):104:104 -> intercept
+    24:25:okhttp3.Response intercept(okhttp3.Interceptor$Chain):106:106 -> intercept
+    26:42:okhttp3.Response intercept(okhttp3.Interceptor$Chain):152:152 -> intercept
+    43:44:kotlin.jvm.functions.Function1 keiyoushi.network.RateLimitInterceptor$RateLimit.getShouldLimit():86:86 -> intercept
+    43:44:okhttp3.Response intercept(okhttp3.Interceptor$Chain):106 -> intercept
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    45:66:okhttp3.Response intercept(okhttp3.Interceptor$Chain):106:106 -> intercept
+    67:71:okhttp3.Response intercept(okhttp3.Interceptor$Chain):107:107 -> intercept
+    72:82:okhttp3.Response intercept(okhttp3.Interceptor$Chain):109:109 -> intercept
+    83:86:boolean keiyoushi.network.RateLimitInterceptor$RateLimitTag.getRateLimitApplied():69:69 -> intercept
+    83:86:okhttp3.Response intercept(okhttp3.Interceptor$Chain):111 -> intercept
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    87:91:okhttp3.Response intercept(okhttp3.Interceptor$Chain):112:112 -> intercept
+    92:97:java.util.concurrent.locks.ReentrantLock keiyoushi.network.RateLimitInterceptor$RateLimit.getLock():89:89 -> intercept
+    92:97:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):121 -> intercept
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    92:97:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    98:100:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):121:121 -> intercept
+    98:100:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    101:106:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):123:123 -> intercept
+    101:106:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    107:118:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):124:124 -> intercept
+    107:118:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    119:147:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):125:125 -> intercept
+    119:147:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    148:156:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):126:126 -> intercept
+    148:156:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    157:162:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):129:129 -> intercept
+    157:162:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    163:169:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):130:130 -> intercept
+    163:169:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    170:190:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):132:132 -> intercept
+    170:190:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    191:194:kotlin.time.Duration keiyoushi.network.RateLimitInterceptor$RateLimit.getLastDispatchTime-FghU774():91:91 -> intercept
+    191:194:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):134 -> intercept
+    191:194:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    195:207:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):135:135 -> intercept
+    195:207:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    208:211:long keiyoushi.network.RateLimitInterceptor$RateLimit.getInterval-UwyO8pc():85:85 -> intercept
+    208:211:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):137 -> intercept
+    208:211:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    212:223:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):137:137 -> intercept
+    212:223:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    224:251:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):139:139 -> intercept
+    224:251:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    252:261:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):141:141 -> intercept
+    252:261:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    262:271:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):142:142 -> intercept
+    262:271:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    272:278:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):143:143 -> intercept
+    272:278:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    279:282:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):144:144 -> intercept
+    279:282:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    283:284:void keiyoushi.network.RateLimitInterceptor$RateLimit.setLastDispatchTime-BwNAW2A(kotlin.time.Duration):91:91 -> intercept
+    283:284:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):144 -> intercept
+    283:284:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    285:286:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):149:149 -> intercept
+    285:286:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    287:292:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):121:121 -> intercept
+    287:292:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    293:294:void keiyoushi.network.RateLimitInterceptor$RateLimitTag.setRateLimitApplied(boolean):69:69 -> intercept
+    293:294:okhttp3.Response intercept(okhttp3.Interceptor$Chain):116 -> intercept
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    295:302:okhttp3.Response intercept(okhttp3.Interceptor$Chain):118:118 -> intercept
+    303:304:java.util.concurrent.locks.Condition keiyoushi.network.RateLimitInterceptor$RateLimit.getRetryCondition():90:90 -> intercept
+    303:304:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):147 -> intercept
+    303:304:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    305:320:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):147:147 -> intercept
+    305:320:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    321:326:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):123:123 -> intercept
+    321:326:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    327:330:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):121:121 -> intercept
+    327:330:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115 -> intercept
+    331:336:okhttp3.Response intercept(okhttp3.Interceptor$Chain):104:104 -> intercept
+keiyoushi.network.RateLimitInterceptor$RateLimit -> b0:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    long period -> a
+    long interval -> b
+    kotlin.jvm.functions.Function1 shouldLimit -> c
+    java.util.ArrayDeque queue -> d
+    java.util.concurrent.locks.ReentrantLock lock -> e
+    java.util.concurrent.locks.Condition retryCondition -> f
+    kotlin.time.Duration lastDispatchTime -> g
+    1:1:void <init>(int,long,long,kotlin.jvm.functions.Function1):82:82 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(JJLkotlin/jvm/functions/Function1;)V"}
+    2:4:void <init>(int,long,long,kotlin.jvm.functions.Function1):84:86 -> <init>
+    5:7:void <init>(int,long,long,kotlin.jvm.functions.Function1):88:90 -> <init>
+keiyoushi.network.RateLimitInterceptor$RateLimitTag -> c0:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    boolean rateLimitApplied -> a
+keiyoushi.network.RateLimitInterceptor$TaggingInterceptor -> d0:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    int RateLimitInterceptor$TaggingInterceptor.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    keiyoushi.network.RateLimitInterceptor$TaggingInterceptor INSTANCE -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ld0;"}
+    3:5:void <init>():72:72 -> <clinit>
+    3:5:void <clinit>():0 -> <clinit>
+    6:8:void <clinit>():0:0 -> <clinit>
+    1:7:void RateLimitInterceptor$TaggingInterceptor.<init>():0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    8:8:void app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.<init>(app.senpou.extension.es.ikigaimangas.IkigaiMangas):0:0 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lapp/senpou/extension/es/ikigaimangas/ExtensionGenerated;)V"}
+    14:17:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):82:82 -> intercept
+    14:17:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    14:17:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    18:25:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):83:83 -> intercept
+    18:25:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    18:25:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    26:29:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):84:84 -> intercept
+    26:29:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    26:29:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    30:33:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):85:85 -> intercept
+    30:33:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    30:33:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    34:48:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):93:93 -> intercept
+    34:48:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    34:48:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    34:48:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    49:62:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):96:96 -> intercept
+    49:62:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    49:62:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    49:62:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    63:67:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):482:482 -> intercept
+    63:67:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    63:67:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    63:67:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    68:82:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):492:492 -> intercept
+    68:82:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    68:82:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    68:82:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    83:84:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):491:491 -> intercept
+    83:84:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    83:84:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    83:84:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    85:106:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):98:98 -> intercept
+    85:106:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    85:106:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    85:106:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    107:149:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):99:99 -> intercept
+    107:149:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    107:149:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    107:149:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    150:153:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):491:491 -> intercept
+    150:153:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    150:153:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    150:153:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    154:161:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):100:100 -> intercept
+    154:161:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    154:161:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    154:161:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    162:166:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):102:102 -> intercept
+    162:166:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    162:166:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    162:166:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    167:191:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):104:104 -> intercept
+    167:191:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    167:191:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    167:191:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    192:195:okhttp3.Request$Builder app.senpou.extension.es.ikigaimangas.IkigaiMangas.setCookie(okhttp3.Request$Builder,java.lang.String,java.lang.String):106:106 -> intercept
+    192:195:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):86 -> intercept
+    192:195:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    192:195:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    196:199:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):87:87 -> intercept
+    196:199:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    196:199:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    200:205:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):88:88 -> intercept
+    200:205:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    200:205:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    206:210:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.nsfwCookieInterceptor(okhttp3.Interceptor$Chain):89:89 -> intercept
+    206:210:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas.access$nsfwCookieInterceptor(app.senpou.extension.es.ikigaimangas.IkigaiMangas,okhttp3.Interceptor$Chain):43 -> intercept
+    206:210:okhttp3.Response app.senpou.extension.es.ikigaimangas.IkigaiMangas$client_delegate$lambda$0$$inlined$-addNetworkInterceptor$1.intercept(okhttp3.Interceptor$Chain):1396 -> intercept
+    211:218:okhttp3.Response intercept(okhttp3.Interceptor$Chain):74:74 -> intercept
+    219:220:okhttp3.Response intercept(okhttp3.Interceptor$Chain):75:75 -> intercept
+    221:223:void keiyoushi.network.RateLimitInterceptor$RateLimitTag.<init>(boolean):68:68 -> intercept
+    221:223:void keiyoushi.network.RateLimitInterceptor$RateLimitTag.<init>(boolean,int,kotlin.jvm.internal.DefaultConstructorMarker):68 -> intercept
+    221:223:okhttp3.Response intercept(okhttp3.Interceptor$Chain):75 -> intercept
+    224:225:void keiyoushi.network.RateLimitInterceptor$RateLimitTag.<init>(boolean):69:69 -> intercept
+    224:225:void keiyoushi.network.RateLimitInterceptor$RateLimitTag.<init>(boolean,int,kotlin.jvm.internal.DefaultConstructorMarker):68 -> intercept
+    224:225:okhttp3.Response intercept(okhttp3.Interceptor$Chain):75 -> intercept
+    226:231:okhttp3.Response intercept(okhttp3.Interceptor$Chain):75:75 -> intercept
+    232:235:okhttp3.Response intercept(okhttp3.Interceptor$Chain):76:76 -> intercept
+    236:240:okhttp3.Response intercept(okhttp3.Interceptor$Chain):78:78 -> intercept
+keiyoushi.network.RateLimitKt -> R8$$REMOVED$$CLASS$$2:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+keiyoushi.network.RateLimitRule -> f0:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    long period -> a
+    long interval -> b
+    kotlin.jvm.functions.Function1 shouldLimit -> c
+    1:3:void <init>(int,long,long,kotlin.jvm.functions.Function1):57:57 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(JJLkotlin/jvm/functions/Function1;)V"}
+    4:5:void <init>(int,long,long,kotlin.jvm.functions.Function1):59:59 -> <init>
+    6:7:void <init>(int,long,long,kotlin.jvm.functions.Function1):60:60 -> <init>
+    8:10:void <init>(int,long,long,kotlin.jvm.functions.Function1):61:61 -> <init>
+keiyoushi.source.CustomUrlPreferences -> g:
+# {"id":"sourceFile","fileName":"CustomUrlPreferences.kt"}
+    android.content.SharedPreferences preferences -> a
+    4:6:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):11:11 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/SharedPreferences;)V"}
+    7:9:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):12:12 -> <init>
+    10:15:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):21:21 -> <init>
+    16:23:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):22:22 -> <init>
+    24:27:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):23:23 -> <init>
+    28:33:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):24:24 -> <init>
+    34:37:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):25:25 -> <init>
+    38:41:void <init>(android.content.SharedPreferences,java.lang.String,java.lang.String,java.lang.String):26:26 -> <init>
+keiyoushi.source.CustomUrlPreferences$$ExternalSyntheticLambda0 -> c:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:6:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$1(keiyoushi.source.CustomUrlPreferences,android.widget.EditText):45:45 -> onBindEditText
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/widget/EditText;)V"}
+    7:9:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$1(keiyoushi.source.CustomUrlPreferences,android.widget.EditText):46:46 -> onBindEditText
+    10:18:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$1(keiyoushi.source.CustomUrlPreferences,android.widget.EditText):47:47 -> onBindEditText
+    19:23:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$1(keiyoushi.source.CustomUrlPreferences,android.widget.EditText):49:49 -> onBindEditText
+    24:27:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$1(keiyoushi.source.CustomUrlPreferences,android.widget.EditText):48:48 -> onBindEditText
+keiyoushi.source.CustomUrlPreferences$$ExternalSyntheticLambda1 -> d:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    keiyoushi.source.CustomUrlPreferences keiyoushi.source.CustomUrlPreferences$$InternalSyntheticLambda$1$4132eda3a1e2c6d3f422a26458dd196b3dc20e67f2810e6bf51fc8682734c768$1.f$0 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lg;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    androidx.preference.EditTextPreference keiyoushi.source.CustomUrlPreferences$$InternalSyntheticLambda$1$4132eda3a1e2c6d3f422a26458dd196b3dc20e67f2810e6bf51fc8682734c768$1.f$1 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void CustomUrlPreferences$$ExternalSyntheticLambda1.<init>(CustomUrlPreferences,androidx.preference.EditTextPreference):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lg;Landroidx/preference/EditTextPreference;)V"}
+    1:5:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):63:63 -> onPreferenceChange
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroidx/preference/Preference;Ljava/lang/Object;)Z"}
+    6:11:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):64:64 -> onPreferenceChange
+    12:19:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):65:65 -> onPreferenceChange
+    20:25:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):67:67 -> onPreferenceChange
+    26:28:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):68:68 -> onPreferenceChange
+    29:35:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):70:70 -> onPreferenceChange
+    36:39:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):71:71 -> onPreferenceChange
+    40:43:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):72:72 -> onPreferenceChange
+    44:58:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):73:73 -> onPreferenceChange
+    59:75:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):74:74 -> onPreferenceChange
+    76:98:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):75:75 -> onPreferenceChange
+    99:106:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):78:78 -> onPreferenceChange
+    107:111:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):79:79 -> onPreferenceChange
+    112:119:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):81:81 -> onPreferenceChange
+    120:125:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):82:82 -> onPreferenceChange
+    126:130:boolean keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$2(keiyoushi.source.CustomUrlPreferences,androidx.preference.EditTextPreference,androidx.preference.Preference,java.lang.Object):83:83 -> onPreferenceChange
+keiyoushi.source.CustomUrlPreferences$$ExternalSyntheticLambda2 -> e:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    int CustomUrlPreferences$$ExternalSyntheticLambda2.$r8$classId -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    android.widget.EditText keiyoushi.source.CustomUrlPreferences$$InternalSyntheticLambda$2$f75eedcb0f71fb8b1b4ac4d3cbf276eaab95b848328aef2847827f958bde8eba$0.f$0 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void CustomUrlPreferences$$ExternalSyntheticLambda2.<init>(java.lang.Object,int):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    12:21:void app.senpou.extension.es.ikigaimangas.IkigaiMangas.getQfuncFromWebView$lambda$2(kotlin.jvm.internal.Ref$ObjectRef):405:405 -> run
+    12:21:void CustomUrlPreferences$$ExternalSyntheticLambda2.run():0 -> run
+      # {"id":"com.android.tools.r8.synthesized"}
+    22:23:void CustomUrlPreferences$$ExternalSyntheticLambda2.run():0:0 -> run
+    24:28:void keiyoushi.source.CustomUrlPreferences.setupPreferenceScreen$lambda$0$1$0(android.widget.EditText):47:47 -> run
+    24:28:void CustomUrlPreferences$$ExternalSyntheticLambda2.run():0 -> run
+keiyoushi.source.CustomUrlPreferences$setupPreferenceScreen$1$2$2 -> f:
+# {"id":"sourceFile","fileName":"CustomUrlPreferences.kt"}
+    android.widget.EditText $editText -> a
+    1:3:void <init>(android.widget.EditText):49:49 -> <init>
+    4:6:void <init>(android.widget.EditText):0:0 -> <init>
+    3:10:void afterTextChanged(android.text.Editable):51:51 -> afterTextChanged
+    11:28:void afterTextChanged(android.text.Editable):52:52 -> afterTextChanged
+    29:49:void afterTextChanged(android.text.Editable):53:53 -> afterTextChanged
+    1:1:void beforeTextChanged(java.lang.CharSequence,int,int,int):56:56 -> beforeTextChanged
+    1:1:void onTextChanged(java.lang.CharSequence,int,int,int):57:57 -> onTextChanged
+keiyoushi.utils.ContextKt -> b:
+# {"id":"sourceFile","fileName":"Context.kt"}
+    android.app.Application applicationContext -> a
+    1:4:void <clinit>():7:7 -> <clinit>
+    5:9:void <clinit>():10:10 -> <clinit>
+    10:19:void <clinit>():9:9 -> <clinit>
+    20:22:void <clinit>():7:7 -> <clinit>
+keiyoushi.utils.ContextKt$special$$inlined$get$1 -> a:
+# {"id":"sourceFile","fileName":"TypeInfo.kt"}
+    1:4:void <init>():27:27 -> <init>
+keiyoushi.utils.DateKt -> R8$$REMOVED$$CLASS$$3:
+# {"id":"sourceFile","fileName":"Date.kt"}
+keiyoushi.utils.JsonKt -> t:
+# {"id":"sourceFile","fileName":"Json.kt"}
+    kotlinx.serialization.json.Json jsonInstance -> a
+    1:4:void <clinit>():17:17 -> <clinit>
+    5:9:void <clinit>():95:95 -> <clinit>
+    10:19:void <clinit>():94:94 -> <clinit>
+    20:21:void <clinit>():17:17 -> <clinit>
+    22:29:void <clinit>():19:19 -> <clinit>
+keiyoushi.utils.JsonKt$special$$inlined$get$1 -> s:
+# {"id":"sourceFile","fileName":"TypeInfo.kt"}
+    1:4:void <init>():27:27 -> <init>
+keiyoushi.utils.PreferencesKt -> R8$$REMOVED$$CLASS$$4:
+# {"id":"sourceFile","fileName":"Preferences.kt"}

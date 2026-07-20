@@ -1,0 +1,1 @@
+-keep class app.senpou.extension.es.topcomicporno.ExtensionGenerated { <init>(); }

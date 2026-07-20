@@ -1,0 +1,8 @@
+app.senpou.extension.manhwalatino-pngs-0 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/build/generated/res/pngs/release
+app.senpou.extension.manhwalatino-updated_navigation_xml-1 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/build/generated/updated_navigation_xml/release
+app.senpou.extension.manhwalatino-packageReleaseResources-2 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+app.senpou.extension.manhwalatino-packageReleaseResources-3 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+app.senpou.extension.manhwalatino-release-4 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/build/intermediates/merged_res/release/mergeReleaseResources
+app.senpou.extension.manhwalatino-manhwalatino-5 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/res
+app.senpou.extension.manhwalatino-release-6 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwalatino/src/release/res
+gradleHome-0 /home/jeff/.gradle

@@ -5,7 +5,7 @@ plugins {
 }
 
 keiyoushi {
-    name = "Manhwa-Latino"
+    name = "Senpou Manhwa-Latino"
     // Senpou: bumped for search fix (useLoadMoreRequest = Never)
     versionCode = 12
     contentWarning = ContentWarning.MIXED

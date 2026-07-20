@@ -1,0 +1,1 @@
+app.senpou.extension.es.manhwalatino:mipmap/ic_launcher = 0x7f010000

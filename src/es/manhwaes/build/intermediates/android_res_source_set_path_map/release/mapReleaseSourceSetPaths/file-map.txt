@@ -1,0 +1,8 @@
+app.senpou.extension.manhwaes-pngs-0 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/build/generated/res/pngs/release
+app.senpou.extension.manhwaes-updated_navigation_xml-1 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/build/generated/updated_navigation_xml/release
+app.senpou.extension.manhwaes-packageReleaseResources-2 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+app.senpou.extension.manhwaes-packageReleaseResources-3 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+app.senpou.extension.manhwaes-release-4 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/build/intermediates/merged_res/release/mergeReleaseResources
+app.senpou.extension.manhwaes-manhwaes-5 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/res
+app.senpou.extension.manhwaes-release-6 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/manhwaes/src/release/res
+gradleHome-0 /home/jeff/.gradle

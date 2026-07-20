@@ -5,7 +5,7 @@ plugins {
 }
 
 keiyoushi {
-    name = "Manhwa-ES"
+    name = "Senpou Manhwa-ES"
     versionCode = 1
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"

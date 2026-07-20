@@ -1,0 +1,1 @@
+-keep class app.senpou.extension.es.manhwaes.ExtensionGenerated { <init>(); }

@@ -1,116 +1,139 @@
 # Senpou
 
-Extensiones personales para **[Mihon](https://mihon.app)** (y forks compatibles).
+Extensiones **personales** para [Mihon](https://mihon.app) (y forks).  
+Repo pequeño: solo las fuentes que usas. Conviven con las de Keiyoushi (package distinto).
 
-Repo **propio y pequeño**: solo las fuentes que usas. No es el monorepo de Keiyoushi.
+## Fuentes
 
-## Fuentes incluidas
+| Nombre en Mihon | Package Android | Dominio |
+|-----------------|-----------------|---------|
+| Senpou Manhwa-Latino | `app.senpou.extension.es.manhwalatino` | manhwa-latino.com |
+| Senpou Manhwa-ES | `app.senpou.extension.es.manhwaes` | manhwa-es.com |
+| Senpou TopComicPorno | `app.senpou.extension.es.topcomicporno` | topcomicporno.com |
+| Senpou Ikigai Mangas | `app.senpou.extension.es.ikigaimangas` | dominio variable (default `visorikigai.gettocaboca.com`) |
 
-| Extensión        | Módulo                 | Dominio / notas                                      |
-|------------------|------------------------|------------------------------------------------------|
-| Manhwa-Latino    | `src/es/manhwalatino`  | https://manhwa-latino.com — búsqueda sin `admin-ajax` |
-| Manhwa-ES        | `src/es/manhwaes`      | https://manhwa-es.com — mirror / stack Madara        |
-| TopComicPorno    | `src/es/topcomicporno` | https://topcomicporno.com — contigencia              |
-| Ikigai Mangas    | `src/es/ikigaimangas`  | dominio variable; default `visorikigai.gettocaboca.com` |
+**No hace falta desinstalar Keiyoushi.** Packages y nombres de fuente son distintos → otra fila en Extensiones / Fuentes.
 
-### Parche Manhwa-Latino (HTTP 410 en búsqueda)
+### Parche Manhwa-Latino (HTTP 410 al buscar)
 
-La plantilla Madara a veces usa `POST …/wp-admin/admin-ajax.php` (`madara_load_more`).
-En este sitio esa ruta puede responder **410**. Senpou fuerza:
+Se fuerza búsqueda clásica Madara:
 
 ```kotlin
 override val useLoadMoreRequest = LoadMoreStrategy.Never
 ```
 
-Así la búsqueda usa el GET clásico `?s=…&post_type=wp-manga` (mismo enfoque que TopComicPorno).
+Evita `admin-ajax.php` / `madara_load_more` cuando el sitio responde **410**.
 
-Si aún fallara, el siguiente paso es copiar la URL real del buscador del sitio (DevTools → Network) y reescribir `searchMangaRequest`.
+---
 
-### Ikigai y dominios que cambian
+## Uso recomendado: repositorio en Mihon (GitHub)
 
-- Default actual: `https://visorikigai.gettocaboca.com`
-- En preferencias de la fuente: **“Buscar dominio automáticamente”** (lee `ikigaimangas.com`)
-- También puedes fijar la URL a mano en preferencias
+Sí: **es mejor** subir a GitHub y añadir el repo en Mihon. Así actualizas desde la app sin pasar APKs a mano.
 
-## Requisitos
-
-- JDK 17+
-- Android SDK
-- [Android Studio](https://developer.android.com/studio) (recomendado)
-- Mihon (o fork) instalado en el dispositivo/emulador
-
-## Compilar
+### 1. Crear el repo en GitHub
 
 ```bash
 cd senpou
-
-# Una extensión
-./gradlew :src:es:manhwalatino:assembleDebug
-
-# Todas las de Senpou
-./gradlew :src:es:manhwalatino:assembleDebug \
-          :src:es:manhwaes:assembleDebug \
-          :src:es:topcomicporno:assembleDebug \
-          :src:es:ikigaimangas:assembleDebug
+git remote add origin git@github.com:TU_USUARIO/senpou.git
+git push -u origin main
 ```
 
-Los APK suelen quedar bajo:
+### 2. Firma de release (obligatoria para updates estables)
+
+En este PC ya se generó `signingkey.jks` (local, **no se sube a git**).
+
+Copia de seguridad del `.jks` y de las contraseñas. Si pierdes la clave, Mihon no podrá “actualizar” sobre el mismo package.
+
+Para GitHub Actions, crea secrets:
+
+| Secret | Valor |
+|--------|--------|
+| `SIGNING_KEY_BASE64` | `base64 -w0 signingkey.jks` |
+| `SIGNING_KEY_ALIAS` | `senpou` |
+| `KEY_STORE_PASSWORD` | (tu password) |
+| `KEY_PASSWORD` | (tu password) |
+
+Fingerprint actual (local dev key):
 
 ```text
-src/es/<fuente>/build/outputs/apk/
+3312b4d3baf078d661a5a3a78f38a9bf64ae22fce461b4124a871c878394de86
 ```
 
-También puedes abrir la carpeta `senpou` en Android Studio y lanzar el módulo deseado.
+### 3. Publicar la rama `repo` (índice + APKs)
 
-## Instalar en el teléfono
+**Opción A — local**
 
-1. Si ya tienes la extensión **oficial de Keiyoushi** con el mismo package, **desinstálala** (firma distinta).
-2. Instala el APK de Senpou (`adb install -r …` o copiando el archivo).
-3. En Mihon: Browse → la fuente debería aparecer.
+```bash
+export GITHUB_USER=TU_USUARIO
+export GITHUB_REPO=senpou
+# si usas la key local por defecto:
+export ALIAS=senpou
+export KEY_STORE_PASSWORD=senpou-dev-change-me
+export KEY_PASSWORD=senpou-dev-change-me
 
-Packages (igual convención que la comunidad, para no pelear con la API):
+chmod +x scripts/*.sh
+./scripts/build-and-publish-local.sh
+./scripts/push-repo-branch.sh
+```
 
-- `eu.kanade.tachiyomi.extension.es.manhwalatino`
-- `eu.kanade.tachiyomi.extension.es.manhwaes`
-- `eu.kanade.tachiyomi.extension.es.topcomicporno`
-- `eu.kanade.tachiyomi.extension.es.ikigaimangas`
+**Opción B — CI**  
+Push a `main` con el workflow `.github/workflows/publish-repo.yml` (requiere secrets).
 
-## Añadir otra fuente más adelante
+### 4. Añadir en Mihon
 
-1. Crea `src/es/<nombresitio>/` (puedes copiar una similar o usar `ext-bootstrap.py` si aplica).
-2. Si es un CMS Madara, `theme = "madara"` en `build.gradle.kts`.
-3. Compila solo ese módulo.
-4. Si el sitio cambia de dominio a menudo, usa `baseUrl { custom("…") }` o `mirrors(…)` como en Ikigai / docs de Keiyoushi.
+1. Mihon → **Browse** → pestaña **Extensions**  
+2. Menú → **Repositories** (o engranaje de repos)  
+3. Añadir:
 
-Estructura:
+```text
+https://raw.githubusercontent.com/TU_USUARIO/senpou/repo/index.min.json
+```
+
+4. Actualiza la lista e instala las de **Senpou …**
+
+Si el repo es **privado**, `raw.githubusercontent.com` no sirve sin auth; hazlo **público** o usa otra URL pública (JSDelivr, Cloudflare R2, etc.).
+
+---
+
+## Compilar a mano (sin repo)
+
+```bash
+export ALIAS=senpou
+export KEY_STORE_PASSWORD=senpou-dev-change-me
+export KEY_PASSWORD=senpou-dev-change-me
+
+./gradlew :src:es:manhwalatino:assembleRelease
+# APK en src/es/manhwalatino/build/outputs/apk/release/
+```
+
+Debug (firma debug de Android Studio):
+
+```bash
+./gradlew :src:es:manhwalatino:assembleDebug
+```
+
+---
+
+## Estructura
 
 ```text
 senpou/
-  core/ compiler/ gradle/   ← motor de build (no son sitios)
-  lib/                      ← libs mínimas (cryptoaes, i18n para Madara)
-  lib-multisrc/madara/      ← theme compartido
-  src/es/
-    manhwalatino/
-    manhwaes/
-    topcomicporno/
-    ikigaimangas/
+  src/es/                 ← solo 4 fuentes
+  lib-multisrc/madara/    ← theme compartido
+  lib/                    ← libs mínimas
+  scripts/                ← build repo + push
+  .github/workflows/      ← publish automático
 ```
+
+Añadir sitio nuevo: crea `src/es/nombresitio/`, compila, vuelve a generar la rama `repo`.
+
+---
 
 ## Cloudflare
 
-Si Mihon muestra challenge de Cloudflare: abre la fuente en WebView, completa el check y vuelve. Eso es del sitio, no del repo. Las cookies suelen durar un tiempo.
+Si Mihon muestra challenge: WebView de la fuente → completar → volver. Normal en estos sitios.
 
-## Créditos / licencia
+## Créditos
 
-- Código base de extensiones y theme Madara: comunidad Tachiyomi / Mihon / [Keiyoushi](https://github.com/keiyoushi/extensions-source) (Apache 2.0).
-- Senpou es un recorte personal con fuentes y parches propios; no está afiliado a Mihon ni a Keiyoushi.
-- Los sitios listados son de terceros; este proyecto no aloja su contenido.
-
-## Mantenimiento rápido
-
-| Síntoma                         | Dónde mirar                                      |
-|---------------------------------|--------------------------------------------------|
-| Búsqueda 410                    | `useLoadMoreRequest` / `searchMangaRequest`      |
-| Dominio Ikigai nuevo            | `ikigaimangas/build.gradle.kts` o prefs en app   |
-| Selectores rotos Madara         | clase de la fuente o `lib-multisrc/madara`       |
-| Imágenes raras / Content-Type   | interceptor en Manhwa-Latino / Manhwa-ES         |
+Código base: comunidad Tachiyomi / Mihon / [Keiyoushi](https://github.com/keiyoushi/extensions-source) (Apache 2.0).  
+Senpou no está afiliado a Mihon ni Keiyoushi. Los sitios son de terceros.

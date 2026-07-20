@@ -53,11 +53,14 @@ class ExtensionPlugin : Plugin<Project> {
 
         val keiyoushi = extensions.create<KeiyoushiExtension>("keiyoushi")
         val applicationIdSuffix = "${project.parent?.name}.${project.name}"
+        // Senpou: own package namespace so extensions coexist with Keiyoushi installs.
+        val applicationIdBase = "app.senpou.extension"
 
         android {
-            namespace = "eu.kanade.tachiyomi.extension"
+            namespace = applicationIdBase
 
             defaultConfig {
+                applicationId = applicationIdBase
                 this.applicationIdSuffix = applicationIdSuffix
             }
 
@@ -231,7 +234,7 @@ class ExtensionPlugin : Plugin<Project> {
                         keyAlias.set(signingConfig.keyAlias.orEmpty())
                         keyPassword.set(signingConfig.keyPassword.orEmpty())
                         minSdkVersion.set(kei.versions.android.sdk.min.map { it.toInt() })
-                        val jarName = versionNameProvider.map { "tachiyomi-$applicationIdSuffix-v$it.jar" }
+                        val jarName = versionNameProvider.map { "senpou-$applicationIdSuffix-v$it.jar" }
                         outputJar.set(layout.buildDirectory.file(jarName.map { "outputs/jar/${variant.name}/$it" }))
                     }
 
@@ -242,7 +245,7 @@ class ExtensionPlugin : Plugin<Project> {
         }
 
         base {
-            archivesName.set(versionNameProvider.map { "tachiyomi-$applicationIdSuffix-v$it" })
+            archivesName.set(versionNameProvider.map { "senpou-$applicationIdSuffix-v$it" })
         }
 
         dependencies {
@@ -279,7 +282,7 @@ class ExtensionPlugin : Plugin<Project> {
                 inputs.file(translationsFile)
             }
 
-            val packageName = "eu.kanade.tachiyomi.extension.$applicationIdSuffix"
+            val packageName = "$applicationIdBase.$applicationIdSuffix"
             val sourceInfos = resolvedSources.map { source ->
                 SourceMetadata(
                     id = source.id,

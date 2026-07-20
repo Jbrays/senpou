@@ -5,7 +5,7 @@ plugins {
 }
 
 keiyoushi {
-    name = "Ikigai Mangas"
+    name = "Senpou Ikigai Mangas"
     // Senpou: default domain as of 2026-07 (site moves often; auto-fetch still available in prefs)
     versionCode = 35
     contentWarning = ContentWarning.MIXED

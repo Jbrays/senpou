@@ -1,0 +1,8 @@
+app.senpou.extension.ikigaimangas-pngs-0 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/build/generated/res/pngs/release
+app.senpou.extension.ikigaimangas-updated_navigation_xml-1 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/build/generated/updated_navigation_xml/release
+app.senpou.extension.ikigaimangas-packageReleaseResources-2 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+app.senpou.extension.ikigaimangas-packageReleaseResources-3 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+app.senpou.extension.ikigaimangas-release-4 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/build/intermediates/merged_res/release/mergeReleaseResources
+app.senpou.extension.ikigaimangas-ikigaimangas-5 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/res
+app.senpou.extension.ikigaimangas-release-6 /home/jeff/Documentos/Personal/EXTENSIONES/senpou/src/es/ikigaimangas/src/release/res
+gradleHome-0 /home/jeff/.gradle
