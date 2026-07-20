@@ -6,8 +6,8 @@ plugins {
 
 keiyoushi {
     name = "Senpou Manhwa-Latino"
-    // Senpou: slower rate limit + no view-count POSTs (HTTP 429)
-    versionCode = 14
+    // Senpou: search via list-scan fallback when /search/ returns 429
+    versionCode = 15
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"
