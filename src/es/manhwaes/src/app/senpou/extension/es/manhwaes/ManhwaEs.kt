@@ -9,7 +9,6 @@ import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
 import keiyoushi.network.rateLimit
-import okhttp3.HttpUrl
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -36,10 +35,15 @@ abstract class ManhwaEs : Madara() {
     private val searchPageSize = 24
     private val listPagesToScan = 3
 
+    // Same client as original Manhwa-Latino: 1 request every 2s.
     override val client: OkHttpClient = super.client.newBuilder()
         .addInterceptor { chain ->
             val request = chain.request()
-            val isImageRequest = request.url.isImagePath()
+
+            val isImageRequest = request.url.toString().substringBefore("?").let {
+                it.endsWith(".jpg", true) || it.endsWith(".jpeg", true) ||
+                    it.endsWith(".png", true) || it.endsWith(".webp", true)
+            }
 
             val newRequest = if (isImageRequest) {
                 request.newBuilder().removeHeader("Accept-Encoding").build()
@@ -60,14 +64,8 @@ abstract class ManhwaEs : Madara() {
 
             return@addInterceptor response
         }
-        .rateLimit(2, 2.seconds) { !it.isImagePath() }
+        .rateLimit(1, 2.seconds)
         .build()
-
-    private fun HttpUrl.isImagePath(): Boolean {
-        val path = encodedPath.lowercase(Locale.ROOT)
-        return path.endsWith(".jpg") || path.endsWith(".jpeg") || path.endsWith(".png") ||
-            path.endsWith(".webp") || path.endsWith(".gif") || path.endsWith(".avif")
-    }
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request = searchLoadMoreRequest(page, query, filters)
 

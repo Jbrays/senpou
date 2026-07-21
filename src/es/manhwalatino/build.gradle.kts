@@ -6,8 +6,8 @@ plugins {
 
 keiyoushi {
     name = "Senpou Manhwa-Latino"
-    // Senpou: HTML-only rate limit 2/2s (unlimited images) to avoid Popular 429
-    versionCode = 18
+    // Senpou: restore original Keiyoushi rateLimit(1, 2.seconds)
+    versionCode = 19
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"
