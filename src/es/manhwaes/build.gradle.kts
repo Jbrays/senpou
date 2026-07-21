@@ -6,8 +6,8 @@ plugins {
 
 keiyoushi {
     name = "Senpou Manhwa-ES"
-    // Senpou: drop artificial rate limit
-    versionCode = 6
+    // Senpou: HTML-only rate limit 2/2s (unlimited images)
+    versionCode = 7
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"

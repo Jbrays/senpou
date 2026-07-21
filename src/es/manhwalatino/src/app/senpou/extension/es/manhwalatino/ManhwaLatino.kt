@@ -8,6 +8,8 @@ import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.annotation.Source
+import keiyoushi.network.rateLimit
+import okhttp3.HttpUrl
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -20,6 +22,7 @@ import java.text.Normalizer
 import java.text.SimpleDateFormat
 import java.util.Locale
 import kotlin.math.min
+import kotlin.time.Duration.Companion.seconds
 
 @Source
 abstract class ManhwaLatino : Madara() {
@@ -43,11 +46,7 @@ abstract class ManhwaLatino : Madara() {
     override val client: OkHttpClient = super.client.newBuilder()
         .addInterceptor { chain ->
             val request = chain.request()
-
-            val isImageRequest = request.url.toString().substringBefore("?").let {
-                it.endsWith(".jpg", true) || it.endsWith(".jpeg", true) ||
-                    it.endsWith(".png", true) || it.endsWith(".webp", true)
-            }
+            val isImageRequest = request.url.isImagePath()
 
             val newRequest = if (isImageRequest) {
                 request.newBuilder().removeHeader("Accept-Encoding").build()
@@ -68,8 +67,16 @@ abstract class ManhwaLatino : Madara() {
 
             return@addInterceptor response
         }
-        // No artificial rate limit: browse already works fine; 410/429 were bad endpoints, not volume.
+        // Throttle only HTML/API (not thumbnails). Unlimited pages flood CF → 429 after ~3 rows.
+        // 2 document requests / 2s keeps Popular pagination usable without hammering.
+        .rateLimit(2, 2.seconds) { !it.isImagePath() }
         .build()
+
+    private fun HttpUrl.isImagePath(): Boolean {
+        val path = encodedPath.lowercase(Locale.ROOT)
+        return path.endsWith(".jpg") || path.endsWith(".jpeg") || path.endsWith(".png") ||
+            path.endsWith(".webp") || path.endsWith(".gif") || path.endsWith(".avif")
+    }
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
         // Prefer Madara AJAX search (full catalog). Not the pretty /search/ URL.
