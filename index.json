@@ -19,10 +19,10 @@
   {
     "name": "Senpou Manhwa-ES",
     "pkg": "app.senpou.extension.es.manhwaes",
-    "apk": "senpou-es.manhwaes-v1.4.59.apk",
+    "apk": "senpou-es.manhwaes-v1.4.60.apk",
     "lang": "es",
-    "code": 59,
-    "version": "1.4.59",
+    "code": 60,
+    "version": "1.4.60",
     "nsfw": 1,
     "sources": [
       {
@@ -36,10 +36,10 @@
   {
     "name": "Senpou Manhwa-Latino",
     "pkg": "app.senpou.extension.es.manhwalatino",
-    "apk": "senpou-es.manhwalatino-v1.4.70.apk",
+    "apk": "senpou-es.manhwalatino-v1.4.71.apk",
     "lang": "es",
-    "code": 70,
-    "version": "1.4.70",
+    "code": 71,
+    "version": "1.4.71",
     "nsfw": 1,
     "sources": [
       {
