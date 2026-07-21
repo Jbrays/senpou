@@ -7,7 +7,7 @@ plugins {
 keiyoushi {
     name = "Senpou Manhwa-Latino"
     // Senpou: restore original Keiyoushi rateLimit(1, 2.seconds)
-    versionCode = 19
+    versionCode = 20
     contentWarning = ContentWarning.MIXED
     libVersion = "1.4"
     theme = "madara"
