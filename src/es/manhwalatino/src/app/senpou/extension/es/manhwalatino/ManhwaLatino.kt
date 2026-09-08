@@ -119,7 +119,7 @@ abstract class ManhwaLatino : Madara() {
         val url = baseUrl.toHttpUrl().newBuilder().apply {
             addPathSegment("search")
             addPathSegment(searchPathToken)
-            addPathSegment(normalize(query))
+            addPathSegment(searchSlug(query))
             if (page > 1) {
                 addPathSegment("page")
                 addPathSegment(page.toString())
@@ -317,6 +317,10 @@ abstract class ManhwaLatino : Madara() {
         val decomposed = Normalizer.normalize(lower, Normalizer.Form.NFD)
         return decomposed.replace("\\p{Mn}+".toRegex(), "")
     }
+
+    private fun searchSlug(query: String): String = normalize(query)
+        .trim()
+        .replace("\\s+".toRegex(), "-")
 
     override val useNewChapterEndpoint = true
 
