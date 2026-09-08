@@ -45,8 +45,8 @@ abstract class ManhwaEs : Madara() {
     override val sendViewCount = false
     override val fetchGenres = false
 
-    /** From website search rewrite, e.g. /search/1788a865/cunada/ */
-    private val searchPathToken = "1788a865"
+    /** From website search rewrite, e.g. /search/43a824e1/cunada/ */
+    private val searchPathToken = "43a824e1"
 
     private val searchPageSize = 24
     private val listPagesToScan = 4
@@ -120,7 +120,7 @@ abstract class ManhwaEs : Madara() {
         val url = baseUrl.toHttpUrl().newBuilder().apply {
             addPathSegment("search")
             addPathSegment(searchPathToken)
-            addPathSegment(query)
+            addPathSegment(normalize(query))
             if (page > 1) {
                 addPathSegment("page")
                 addPathSegment(page.toString())
