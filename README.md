@@ -14,15 +14,30 @@ Repo pequeño: solo las fuentes que usas. Conviven con las de Keiyoushi (package
 
 **No hace falta desinstalar Keiyoushi.** Packages y nombres de fuente son distintos → otra fila en Extensiones / Fuentes.
 
-### Parche Manhwa-Latino (HTTP 410 al buscar)
+### Búsqueda en Manhwa-Latino y Manhwa-ES
 
-Se fuerza búsqueda clásica Madara:
+Las dos fuentes usan `/search/8864a5c8/{consulta}/`, según los enlaces
+proporcionados el 13 de octubre de 2026. Las consultas con varias palabras se
+normalizan a minúsculas, sin acentos y con guiones.
 
-```kotlin
-override val useLoadMoreRequest = LoadMoreStrategy.Never
+Los errores HTTP se muestran en Mihon: ya no se ocultan como «sin resultados»
+ni se sustituyen por una búsqueda parcial entre las últimas publicaciones.
+Si Cloudflare bloquea la petición, abre el WebView de la fuente, completa el
+desafío y vuelve a buscar. El token puede cambiar de nuevo en el sitio.
+
+Comprobación del 13 de octubre de 2026:
+
+- TopComicPorno: búsqueda `ajumma` con 11 resultados; ficha, lista de 51
+  capítulos, lector y descarga de una imagen comprobados por HTTP.
+- Manhwa-Latino y Manhwa-ES: los dominios responden, pero Cloudflare devuelve
+  HTTP 403 desde la máquina de compilación. La búsqueda real y la lectura de
+  estas dos fuentes siguen pendientes de verificación en Mihon con acceso.
+
+Pruebas de regresión de rutas, codificación de consultas y errores HTTP:
+
+```bash
+./gradlew :core:testDebugUnitTest --tests keiyoushi.network.ManhwaSearchTest
 ```
-
-Evita `admin-ajax.php` / `madara_load_more` cuando el sitio responde **410**.
 
 ---
 
