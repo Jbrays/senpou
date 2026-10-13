@@ -19,10 +19,10 @@
   {
     "name": "Senpou Manhwa-ES",
     "pkg": "app.senpou.extension.es.manhwaes",
-    "apk": "senpou-es.manhwaes-v1.4.63.apk",
+    "apk": "senpou-es.manhwaes-v1.4.64.apk",
     "lang": "es",
-    "code": 63,
-    "version": "1.4.63",
+    "code": 64,
+    "version": "1.4.64",
     "nsfw": 1,
     "sources": [
       {
@@ -36,10 +36,10 @@
   {
     "name": "Senpou Manhwa-Latino",
     "pkg": "app.senpou.extension.es.manhwalatino",
-    "apk": "senpou-es.manhwalatino-v1.4.74.apk",
+    "apk": "senpou-es.manhwalatino-v1.4.75.apk",
     "lang": "es",
-    "code": 74,
-    "version": "1.4.74",
+    "code": 75,
+    "version": "1.4.75",
     "nsfw": 1,
     "sources": [
       {
@@ -53,10 +53,10 @@
   {
     "name": "Senpou TopComicPorno",
     "pkg": "app.senpou.extension.es.topcomicporno",
-    "apk": "senpou-es.topcomicporno-v1.4.52.apk",
+    "apk": "senpou-es.topcomicporno-v1.4.53.apk",
     "lang": "es",
-    "code": 52,
-    "version": "1.4.52",
+    "code": 53,
+    "version": "1.4.53",
     "nsfw": 1,
     "sources": [
       {
