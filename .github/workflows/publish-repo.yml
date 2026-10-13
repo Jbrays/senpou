@@ -33,6 +33,10 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: '16111833'
+          packages: 'platform-tools'
+          log-accepted-android-sdk-licenses: false
 
       - name: Prepare signing key
         env:
